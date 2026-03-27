@@ -359,7 +359,17 @@
 </style>
 </head>
 <body>
-<div class="page">
+<div class="page" id="content" style="display:none;">
+<script>
+(function(){
+  var p = prompt('Enter password to view this page:');
+  if(p === 'solsolace') {
+    document.getElementById('content').style.display = '';
+  } else {
+    document.body.innerHTML = '<div style="text-align:center;padding:100px 20px;font-family:sans-serif;color:#8A8578;"><h2 style="color:#2D4F4F;">Access Denied</h2><p>Incorrect password. Contact Douglas for access.</p></div>';
+  }
+})();
+</script>
 
   <!-- ── HEADER ── -->
   <header>

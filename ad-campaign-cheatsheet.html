@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El Salto Sagrado — Meta Ads Setup Guide</title>
+<style>
+  :root {
+    --teal: #2D4F4F;
+    --gold: #C4A862;
+    --cream: #FAF8F3;
+    --warm-gray: #8A8578;
+    --light-border: #E0DDD6;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background: #fff;
+    color: #333;
+    line-height: 1.5;
+    font-size: 14px;
+  }
+
+  .page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 32px 24px;
+  }
+
+  /* ── Header ── */
+  header {
+    text-align: center;
+    padding-bottom: 24px;
+    border-bottom: 2px solid var(--gold);
+    margin-bottom: 28px;
+  }
+  header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--teal);
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+  }
+  header .subtitle {
+    font-size: 13px;
+    color: var(--warm-gray);
+    letter-spacing: 0.3px;
+  }
+  .event-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 20px;
+    margin-top: 12px;
+    font-size: 13px;
+  }
+  .event-details span {
+    background: var(--cream);
+    padding: 4px 12px;
+    border-radius: 4px;
+    color: var(--teal);
+    font-weight: 500;
+  }
+
+  /* ── Sections ── */
+  section {
+    margin-bottom: 28px;
+  }
+  section:not(:last-of-type) {
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--light-border);
+  }
+  h2 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--teal);
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  h2 .num {
+    display: inline-block;
+    background: var(--teal);
+    color: #fff;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 22px;
+    font-size: 12px;
+    margin-right: 6px;
+    vertical-align: middle;
+    letter-spacing: 0;
+  }
+
+  /* ── Campaign structure ── */
+  .campaign-bar {
+    background: var(--teal);
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 6px 6px 0 0;
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 4px 16px;
+  }
+  .campaign-bar small {
+    font-weight: 400;
+    opacity: 0.85;
+    font-size: 12px;
+  }
+  .ad-sets {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 0;
+    border: 1px solid var(--light-border);
+    border-top: none;
+    border-radius: 0 0 6px 6px;
+    overflow: hidden;
+  }
+  .ad-set {
+    padding: 12px 14px;
+    border-right: 1px solid var(--light-border);
+    font-size: 13px;
+  }
+  .ad-set:last-child { border-right: none; }
+  .ad-set h3 {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--teal);
+    margin-bottom: 4px;
+  }
+  .ad-set .budget {
+    font-size: 11px;
+    color: var(--gold);
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+  .ad-set ul {
+    list-style: none;
+    padding: 0;
+  }
+  .ad-set li {
+    font-size: 12px;
+    color: #555;
+    padding-left: 12px;
+    position: relative;
+    margin-bottom: 2px;
+  }
+  .ad-set li::before {
+    content: '›';
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-weight: bold;
+  }
+
+  /* ── Ad Copy Cards ── */
+  .angle-cards {
+    display: grid;
+    gap: 14px;
+  }
+  .angle-card {
+    border: 1px solid var(--light-border);
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .angle-card-header {
+    background: var(--cream);
+    padding: 8px 14px;
+    font-weight: 700;
+    font-size: 13px;
+    color: var(--teal);
+    border-bottom: 1px solid var(--light-border);
+  }
+  .angle-card-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+  .ad-variant {
+    padding: 10px 14px;
+    font-size: 12px;
+  }
+  .ad-variant:first-child {
+    border-right: 1px solid var(--light-border);
+  }
+  .ad-variant .label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--warm-gray);
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+  .ad-variant .field {
+    margin-bottom: 6px;
+  }
+  .ad-variant .field-name {
+    font-weight: 600;
+    color: var(--teal);
+    font-size: 11px;
+  }
+  .ad-variant .field-value {
+    color: #444;
+    line-height: 1.4;
+  }
+
+  /* ── Budget ── */
+  .budget-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .budget-box {
+    background: var(--cream);
+    border-radius: 6px;
+    padding: 12px 14px;
+    font-size: 13px;
+  }
+  .budget-box h3 {
+    font-size: 13px;
+    color: var(--teal);
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .budget-box ul {
+    list-style: none;
+    padding: 0;
+  }
+  .budget-box li {
+    margin-bottom: 2px;
+    font-size: 12px;
+    color: #555;
+  }
+  .kill-rules {
+    margin-top: 8px;
+    background: #fff;
+    border: 1px solid var(--light-border);
+    border-radius: 4px;
+    padding: 6px 10px;
+    font-size: 12px;
+    color: #b44;
+    font-weight: 600;
+  }
+
+  /* ── Checklists ── */
+  .checklist {
+    list-style: none;
+    padding: 0;
+  }
+  .checklist li {
+    padding: 4px 0 4px 24px;
+    position: relative;
+    font-size: 13px;
+    color: #444;
+  }
+  .checklist li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 7px;
+    width: 14px;
+    height: 14px;
+    border: 1.5px solid var(--warm-gray);
+    border-radius: 3px;
+  }
+  .checklist li.sub {
+    padding-left: 44px;
+  }
+  .checklist li.sub::before {
+    left: 20px;
+  }
+
+  /* ── Assets ── */
+  .assets-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .asset-group {
+    background: var(--cream);
+    border-radius: 6px;
+    padding: 12px 14px;
+  }
+  .asset-group h3 {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: var(--teal);
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .asset-group ul {
+    list-style: none;
+    padding: 0;
+  }
+  .asset-group li {
+    font-size: 12px;
+    color: #555;
+    margin-bottom: 3px;
+    padding-left: 14px;
+    position: relative;
+  }
+  .asset-group li::before {
+    content: '✦';
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-size: 10px;
+  }
+
+  /* ── Brand voice ── */
+  .brand-voice {
+    background: var(--teal);
+    color: #fff;
+    border-radius: 6px;
+    padding: 16px 18px;
+    font-size: 13px;
+    line-height: 1.6;
+  }
+  .brand-voice strong {
+    color: var(--gold);
+  }
+
+  /* ── Footer ── */
+  footer {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid var(--light-border);
+    font-size: 11px;
+    color: var(--warm-gray);
+    letter-spacing: 0.3px;
+  }
+
+  /* ── Print ── */
+  @media print {
+    body { font-size: 12px; }
+    .page { padding: 0; }
+    section { page-break-inside: avoid; }
+    .angle-card { page-break-inside: avoid; }
+  }
+
+  /* ── Mobile ── */
+  @media (max-width: 640px) {
+    .angle-card-body { grid-template-columns: 1fr; }
+    .ad-variant:first-child { border-right: none; border-bottom: 1px solid var(--light-border); }
+    .budget-grid { grid-template-columns: 1fr; }
+    .assets-grid { grid-template-columns: 1fr; }
+    .ad-sets { grid-template-columns: 1fr; }
+    .ad-set { border-right: none; border-bottom: 1px solid var(--light-border); }
+    .ad-set:last-child { border-bottom: none; }
+    .event-details { flex-direction: column; align-items: center; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- ── HEADER ── -->
+  <header>
+    <h1>El Salto Sagrado</h1>
+    <div class="subtitle">Meta Ads Setup Guide</div>
+    <div class="event-details">
+      <span>April 10 &ndash; 12, 2026</span>
+      <span>Serana &middot; Paige, TX</span>
+      <span>retreat.solsolacestudio.com</span>
+      <span>IG: @solsolacestudio</span>
+    </div>
+  </header>
+
+  <!-- ── 1. CAMPAIGN STRUCTURE ── -->
+  <section>
+    <h2><span class="num">1</span> Campaign Structure</h2>
+    <div class="campaign-bar">
+      <span>El Salto Sagrado &mdash; Spring Retreat</span>
+      <span>Objective: Conversions <small>&nbsp;|&nbsp;</small> $30/day <small>&nbsp;|&nbsp;</small> Now &rarr; April 9</span>
+    </div>
+
+    <div style="margin-top:16px;margin-bottom:12px;">
+      <div style="background:var(--gold);color:#fff;display:inline-block;padding:3px 10px;border-radius:4px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;">Start here</div>
+      <span style="font-size:13px;font-weight:600;color:var(--teal);margin-left:8px;">Minimum Launch &mdash; 6 ads total</span>
+      <p style="font-size:12px;color:#666;margin-top:4px;">Start with 2 ad sets and 3 angles each. This gives each ad ~$5/day &mdash; enough for Meta's algorithm to learn. Get results in 3&ndash;4 days before expanding.</p>
+    </div>
+
+    <div class="ad-sets">
+      <div class="ad-set">
+        <h3>Ad Set 1: Warm Audience</h3>
+        <div class="budget">$15/day</div>
+        <ul>
+          <li>IG engagers (last 90 days)</li>
+          <li>Website visitors (once Pixel fires)</li>
+          <li>Email list upload (if available)</li>
+        </ul>
+        <div style="margin-top:6px;font-size:11px;color:var(--teal);font-weight:600;">Run Angles 1, 3, 4</div>
+      </div>
+      <div class="ad-set">
+        <h3>Ad Set 2: Interest-Based</h3>
+        <div class="budget">$15/day</div>
+        <ul>
+          <li>Austin + 50 mi, Women 28&ndash;55</li>
+          <li>Wellness / yoga / meditation retreats</li>
+          <li>Spiritual healing / mindfulness / self-care</li>
+          <li>Bren&eacute; Brown / Glennon Doyle / Super Soul</li>
+        </ul>
+        <div style="margin-top:6px;font-size:11px;color:var(--teal);font-weight:600;">Run Angles 1, 3, 4</div>
+      </div>
+    </div>
+
+    <div style="margin-top:16px;margin-bottom:12px;">
+      <div style="background:var(--warm-gray);color:#fff;display:inline-block;padding:3px 10px;border-radius:4px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.8px;">Expand later</div>
+      <span style="font-size:13px;font-weight:600;color:var(--teal);margin-left:8px;">Full Campaign &mdash; add when winners emerge (Day 4+)</span>
+      <p style="font-size:12px;color:#666;margin-top:4px;">Once you know which angles and audiences perform best, add Ad Set 3 and swap in fresh angles (2 &amp; 5) to keep creative from fatiguing.</p>
+    </div>
+
+    <div class="ad-sets">
+      <div class="ad-set">
+        <h3>Ad Set 3: Lookalike</h3>
+        <div class="budget">Shift budget from losers</div>
+        <ul>
+          <li>1% lookalike of IG engagers</li>
+          <li>1% lookalike of website visitors</li>
+          <li>Austin + 50 mi, Women 28&ndash;55</li>
+        </ul>
+        <div style="margin-top:6px;font-size:11px;color:var(--teal);font-weight:600;">Run winning angles from Phase 1</div>
+      </div>
+      <div class="ad-set">
+        <h3>Fresh Creative</h3>
+        <div class="budget">Swap into winning ad sets</div>
+        <ul>
+          <li>Angle 2 (The Experience) &mdash; schedule details</li>
+          <li>Angle 5 (Identity) &mdash; qualification hook</li>
+          <li>Replaces fatigued ads from Phase 1</li>
+        </ul>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ── 2. AD COPY ── -->
+  <section>
+    <h2><span class="num">2</span> Ad Copy &mdash; 5 Angles</h2>
+    <p style="font-size:12px;color:#666;margin-bottom:12px;"><span style="background:var(--gold);color:#fff;padding:1px 6px;border-radius:3px;font-size:10px;font-weight:600;">START</span> = launch with these &nbsp;&nbsp; <span style="background:var(--warm-gray);color:#fff;padding:1px 6px;border-radius:3px;font-size:10px;font-weight:600;">EXPAND</span> = add after Day 4</p>
+    <div class="angle-cards">
+
+      <!-- Angle 1 -->
+      <div class="angle-card">
+        <div class="angle-card-header"><span style="background:var(--gold);color:#fff;padding:1px 6px;border-radius:3px;font-size:10px;font-weight:600;margin-right:6px;">START</span> Angle 1: The Pause <span style="font-weight:400;color:var(--warm-gray);">&mdash; Pain &rarr; Release</span></div>
+        <div class="angle-card-body">
+          <div class="ad-variant">
+            <div class="label">Story / Reel</div>
+            <div class="field"><span class="field-name">Primary:</span> <span class="field-value">You've been in constant motion. This weekend, pause &mdash; and release what's complete.</span></div>
+            <div class="field"><span class="field-name">Headline:</span> <span class="field-value">Reserve your spot &middot; April 10&ndash;12</span></div>
+            <div class="field"><span class="field-name">CTA:</span> <span class="field-value">Learn More</span></div>
+          </div>
+          <div class="ad-variant">
+            <div class="label">Feed</div>
+            <div class="field"><span class="field-name">Primary:</span> <span class="field-value">Not everything you've been carrying is meant to come with you into the next cycle.<br><br>El Salto Sagrado &mdash; a weekend of intentional transition on 53 acres of private Texas land.<br><br>April 10&ndash;12 &middot; Paige, TX &middot; Limited spots.</span></div>
+            <div class="field"><span class="field-name">Headline:</span> <span class="field-value">The Sacred Leap &mdash; Spring Retreat</span></div>
+            <div class="field"><span class="field-name">CTA:</span> <span class="field-value">Learn More</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Angle 2 -->
+      <div class="angle-card">
+        <div class="angle-card-header"><span style="background:var(--warm-gray);color:#fff;padding:1px 6px;border-radius:3px;font-size:10px;font-weight:600;margin-right:6px;">EXPAND</span> Angle 2: The Experience <span style="font-weight:400;color:var(--warm-gray);">&mdash; Aspiration + Specifics</span></div>
+        <div class="angle-card-body">
+          <div class="ad-variant">
+            <div class="label">Story / Reel</div>
+            <div class="field"><span class="field-name">Primary:</span> <span class="field-value">Cacao ceremony. Fire ritual. Saltwater pool. Sauna. 53 private acres. Not a spa &mdash; a threshold.</span></div>
+            <div class="field"><span class="field-name">Headline:</span> <span class="field-value">April 10&ndash;12 &middot; Paige, TX</span></div>
+            <div class="field"><span class="field-name">CTA:</span> <span class="field-value">Learn More</span></div>
+          </div>
+          <div class="ad-variant">
+            <div class="label">Feed</div>
+            <div class="field"><span class="field-name">Primary:</span> <span class="field-value">Friday: Opening circle + cacao ceremony<br>Saturday: Speakers on burnout &amp; aligned action, ritual integration, fire ceremony<br>Sunday: Sunrise ceremony + closing circle<br><br>Serana &mdash; 53 acres near Bastrop. Luxury cabins, field cabins, or commuter passes.</span></div>
+            <div class="field"><span class="field-name">Headline:</span> <span class="field-value">See the full weekend schedule</span></div>
+            <div class="field"><span class="field-name">CTA:</span> <span class="field-value">Learn More</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Angle 3 -->
+      <div class="angle-card">
+        <div class="angle-card-header"><span style="background:var(--gold);color:#fff;padding:1px 6px;border-radius:3px;font-size:10px;font-weight:600;margin-right:6px;">START</span> Angle 3: Scarcity + Social Proof <span style="font-weight:400;color:var(--warm-gray);">&mdash; Urgency</span></div>
+        <div class="angle-card-body">
+          <div class="ad-variant">
+            <div class="label">Story / Reel</div>
+            <div class="field"><span class="field-name">Primary:</span> <span class="field-value">Early bird sold out in the first week. A few standard spots remain. April 10&ndash;12.</span></div>
+            <div class="field"><span class="field-name">Headline:</span> <span class="field-value">Don't miss this one</span></div>
+            <div class="field"><span class="field-name">CTA:</span> <span class="field-value">Learn More</span></div>
+          </div>
+          <div class="ad-variant">
+            <div class="label">Feed</div>
+            <div class="field"><span class="field-name">Primary:</span> <span class="field-value">Early bird pricing is gone.<br><br>What's left:<br>&rarr; 3 luxury cabins (private bath, king bed)<br>&rarr; 1 field cabin (queen bed, private bathhouse)<br>&rarr; Limited commuter passes<br><br>El Salto Sagrado &middot; April 10&ndash;12 &middot; Paige, TX</span></div>
+            <div class="field"><span class="field-name">Headline:</span> <span class="field-value">Reserve before it's full</span></div>
+            <div class="field"><span class="field-name">CTA:</span> <span class="field-value">Learn More</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Angle 4 -->
+      <div class="angle-card">
+        <div class="angle-card-header"><span style="background:var(--gold);color:#fff;padding:1px 6px;border-radius:3px;font-size:10px;font-weight:600;margin-right:6px;">START</span> Angle 4: The Setting <span style="font-weight:400;color:var(--warm-gray);">&mdash; Serana as the draw</span></div>
+        <div class="angle-card-body">
+          <div class="ad-variant">
+            <div class="label">Story / Reel</div>
+            <div class="field"><span class="field-name">Primary:</span> <span class="field-value">King bed. Private bathroom. Saltwater pool. Sauna. 53 acres. 45 min from Austin.</span></div>
+            <div class="field"><span class="field-name">Headline:</span> <span class="field-value">See Serana &middot; April 10&ndash;12</span></div>
+            <div class="field"><span class="field-name">CTA:</span> <span class="field-value">Learn More</span></div>
+          </div>
+          <div class="ad-variant">
+            <div class="label">Feed</div>
+            <div class="field"><span class="field-name">Primary:</span> <span class="field-value">Serana: 53 acres of private Texas grassland, 45 minutes from Austin.<br><br>Post Oak cabins with en-suite bathrooms. Saltwater pool. Sauna. Walking trails.<br><br>This is where you'll spend the weekend.<br>El Salto Sagrado &middot; April 10&ndash;12</span></div>
+            <div class="field"><span class="field-name">Headline:</span> <span class="field-value">Explore the property</span></div>
+            <div class="field"><span class="field-name">CTA:</span> <span class="field-value">Learn More</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Angle 5 -->
+      <div class="angle-card">
+        <div class="angle-card-header"><span style="background:var(--warm-gray);color:#fff;padding:1px 6px;border-radius:3px;font-size:10px;font-weight:600;margin-right:6px;">EXPAND</span> Angle 5: Identity / Qualification <span style="font-weight:400;color:var(--warm-gray);">&mdash; Not for everyone</span></div>
+        <div class="angle-card-body">
+          <div class="ad-variant">
+            <div class="label">Story / Reel</div>
+            <div class="field"><span class="field-name">Primary:</span> <span class="field-value">This is for you if you've been running and feel the cost of it. Not a spa day &mdash; a sacred pause.</span></div>
+            <div class="field"><span class="field-name">Headline:</span> <span class="field-value">Is this your moment?</span></div>
+            <div class="field"><span class="field-name">CTA:</span> <span class="field-value">Learn More</span></div>
+          </div>
+          <div class="ad-variant">
+            <div class="label">Feed</div>
+            <div class="field"><span class="field-name">Primary:</span> <span class="field-value">This is for you if:<br>&#10022; Something in your life is no longer sustainable<br>&#10022; You're ready to release what no longer aligns<br>&#10022; You value ceremony, depth, and cultural reverence<br>&#10022; You want action &mdash; grounded and intentional<br><br>This is NOT a spa retreat. It's a sacred pause.<br>April 10&ndash;12 &middot; Serana, Paige TX</span></div>
+            <div class="field"><span class="field-name">Headline:</span> <span class="field-value">Read more + reserve your spot</span></div>
+            <div class="field"><span class="field-name">CTA:</span> <span class="field-value">Learn More</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── 3. BUDGET STRATEGY ── -->
+  <section>
+    <h2><span class="num">3</span> Budget Strategy</h2>
+    <div class="budget-grid">
+      <div class="budget-box">
+        <h3>Phase 1: Days 1&ndash;4 (Minimum Launch)</h3>
+        <ul>
+          <li>2 ad sets &times; 3 angles = <strong>6 ads total</strong></li>
+          <li>$15/day per ad set (~$5/ad/day)</li>
+          <li>Run Angles 1, 3, 4 (Story versions)</li>
+          <li>Goal: Find winning audience + angle</li>
+        </ul>
+      </div>
+      <div class="budget-box">
+        <h3>Phase 2: Days 5&ndash;14 (Expand)</h3>
+        <ul>
+          <li>Kill ads with CTR &lt; 0.8% or CPC &gt; $3</li>
+          <li>Shift budget to winning ad set (up to $20/day)</li>
+          <li>Add Angles 2 &amp; 5 as fresh creative</li>
+          <li>Optionally add Lookalike ad set (Ad Set 3)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="kill-rules">Kill rules: CTR &lt; 0.8% or CPC &gt; $3 &rarr; pause that ad/ad set</div>
+  </section>
+
+  <!-- ── 4. ASSETS NEEDED ── -->
+  <section>
+    <h2><span class="num">4</span> Assets Needed</h2>
+    <div class="assets-grid">
+      <div class="asset-group">
+        <h3>Must-Have</h3>
+        <ul>
+          <li>2&ndash;3 photos of Serana (pool, cabins, land)</li>
+          <li>1 photo of Monica (leading session or candid)</li>
+          <li>1 branded graphic (retreat name + dates + price, teal/gold/cream)</li>
+        </ul>
+      </div>
+      <div class="asset-group">
+        <h3>Nice-to-Have</h3>
+        <ul>
+          <li>15-sec video/reel &mdash; property walkthrough or Monica to camera</li>
+          <li>Testimonials from past attendees (DM screenshots w/ permission)</li>
+          <li>Behind-the-scenes prep photos</li>
+        </ul>
+      </div>
+    </div>
+    <div style="margin-top:8px;font-size:11px;color:var(--warm-gray);">
+      Specs: Stories/Reels 9:16 (1080&times;1920) &nbsp;|&nbsp; Feed 1:1 (1080&times;1080) or 4:5 (1080&times;1350)
+    </div>
+  </section>
+
+  <!-- ── 5. SETUP CHECKLIST ── -->
+  <section>
+    <h2><span class="num">5</span> Setup Checklist</h2>
+    <ul class="checklist">
+      <li>Install Meta Pixel on landing page (need Pixel ID &mdash; give to Douglas)</li>
+      <li>Create custom audiences in Ads Manager:</li>
+      <li class="sub">IG engagers (last 90 days)</li>
+      <li class="sub">Website visitors (once Pixel fires)</li>
+      <li class="sub">Upload email list (if available)</li>
+      <li>Build 1 campaign with 2 ad sets (Warm + Interest-Based)</li>
+      <li>Upload Angles 1, 3, 4 (Story versions) into each ad set &mdash; 6 ads total</li>
+      <li>Set daily budget to $30 ($15 per ad set)</li>
+      <li>Set schedule: now &rarr; April 9</li>
+      <li>Enable Advantage+ placements (prioritize IG Stories)</li>
+      <li>Day 4: Review performance &mdash; kill underperformers, scale winners</li>
+      <li>Day 5+: Add Angles 2 &amp; 5 and Lookalike ad set if budget allows</li>
+    </ul>
+  </section>
+
+  <!-- ── 6. BRAND VOICE ── -->
+  <section>
+    <h2><span class="num">6</span> Brand Voice</h2>
+    <div class="brand-voice">
+      <strong>Tone:</strong> Grounded, intentional, warm but direct. NOT woo-woo fluffy. Think honest invitation, not sales pitch.<br><br>
+      <strong>Key differentiator:</strong> This is NOT a spa retreat &mdash; it's ceremonial, ancestral, land-based. Use that distinction in every piece of creative.
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    Prepared by Sol Solace Studio &nbsp;&middot;&nbsp; retreat.solsolacestudio.com
+  </footer>
+
+</div>
+</body>
+</html>

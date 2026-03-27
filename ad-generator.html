@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Ad Generator</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@400;500;600;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #1a1a1a; display: flex; flex-wrap: wrap; gap: 40px; padding: 40px; justify-content: center; }
+
+  .ad {
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  .ad img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0; left: 0;
+  }
+
+  .ad .overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(180deg, rgba(45,79,79,0.25) 0%, rgba(45,79,79,0.65) 50%, rgba(45,79,79,0.85) 100%);
+    z-index: 1;
+  }
+
+  .ad .content {
+    position: absolute;
+    z-index: 2;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0;
+    top: 0; left: 0; right: 0; bottom: 0;
+  }
+
+  /* ── Story format: 1080x1920 shown at 270x480 ── */
+  .story { width: 270px; height: 480px; }
+  .story .content { padding: 20px 22px 32px; }
+  .story .studio-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 8px;
+  }
+  .story .hook {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-bottom: 12px;
+    color: #fff;
+  }
+  .story .details {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 8.5px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: rgba(255,255,255,0.85);
+    margin-bottom: 14px;
+    line-height: 1.5;
+  }
+  .story .cta-btn {
+    display: inline-block;
+    background: #C4A862;
+    color: #2D4F4F;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 3px;
+    width: 100%;
+  }
+  .story .divider {
+    width: 30px;
+    height: 1px;
+    background: #C4A862;
+    margin-bottom: 10px;
+  }
+
+  /* ── Feed format: 1080x1080 shown at 360x360 ── */
+  .feed { width: 360px; height: 360px; }
+  .feed .overlay {
+    background: linear-gradient(180deg, rgba(45,79,79,0.15) 0%, rgba(45,79,79,0.5) 40%, rgba(45,79,79,0.88) 100%);
+  }
+  .feed .content { padding: 20px 24px 22px; }
+  .feed .studio-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 8px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 6px;
+  }
+  .feed .hook {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-bottom: 8px;
+    color: #fff;
+  }
+  .feed .details {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 8px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.85);
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  .feed .divider {
+    width: 26px;
+    height: 1px;
+    background: #C4A862;
+    margin-bottom: 8px;
+  }
+  .feed .cta-btn {
+    display: inline-block;
+    background: #C4A862;
+    color: #2D4F4F;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 8px 0;
+    text-align: center;
+    border-radius: 3px;
+    width: 100%;
+  }
+
+  .ad-label {
+    color: #888;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 8px;
+    letter-spacing: 0.5px;
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════════ AD 1: The Pause — Story ═══════════ -->
+<div>
+<div class="ad story" id="ad1">
+  <img src="images/hero.jpg" alt="">
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="studio-name">Sol Solace Studio</div>
+    <div class="hook">You've been in constant motion.<br><br>This weekend, pause — and release what's complete.</div>
+    <div class="divider"></div>
+    <div class="details">El Salto Sagrado · Spring Retreat<br>April 10–12 · Serana, Paige TX</div>
+    <div class="cta-btn">Reserve Your Spot</div>
+  </div>
+</div>
+<div class="ad-label">Ad 1: The Pause — Story (1080×1920)</div>
+</div>
+
+<!-- ═══════════ AD 2: The Pause — Feed ═══════════ -->
+<div>
+<div class="ad feed" id="ad2">
+  <img src="images/hero.jpg" alt="">
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="studio-name">Sol Solace Studio</div>
+    <div class="hook">Not everything you've been carrying is meant to come with you.</div>
+    <div class="divider"></div>
+    <div class="details">A weekend of intentional transition — ceremony, reflection, and release on 53 acres of private Texas land.<br><br>April 10–12 · Limited spots</div>
+    <div class="cta-btn">Learn More</div>
+  </div>
+</div>
+<div class="ad-label">Ad 2: The Pause — Feed (1080×1080)</div>
+</div>
+
+<!-- ═══════════ AD 3: Scarcity — Story ═══════════ -->
+<div>
+<div class="ad story" id="ad3">
+  <img src="images/img2.jpg" alt="">
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="studio-name">Sol Solace Studio</div>
+    <div class="hook">Early bird sold out in the first week.</div>
+    <div class="divider"></div>
+    <div class="details">A few standard spots remain:<br>→ 3 luxury cabins<br>→ 1 field cabin<br>→ Limited commuter passes<br><br>El Salto Sagrado · April 10–12 · Paige, TX</div>
+    <div class="cta-btn">Reserve Before It's Full</div>
+  </div>
+</div>
+<div class="ad-label">Ad 3: Scarcity — Story (1080×1920)</div>
+</div>
+
+<!-- ═══════════ AD 4: Scarcity — Feed ═══════════ -->
+<div>
+<div class="ad feed" id="ad4">
+  <img src="images/img2.jpg" alt="">
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="studio-name">Sol Solace Studio</div>
+    <div class="hook">Early bird is gone.<br>A few spots remain.</div>
+    <div class="divider"></div>
+    <div class="details">3 luxury cabins · 1 field cabin · Limited commuter passes<br><br>El Salto Sagrado · April 10–12 · Paige, TX</div>
+    <div class="cta-btn">Don't Miss This One</div>
+  </div>
+</div>
+<div class="ad-label">Ad 4: Scarcity — Feed (1080×1080)</div>
+</div>
+
+<!-- ═══════════ AD 5: The Setting — Story ═══════════ -->
+<div>
+<div class="ad story" id="ad5">
+  <img src="images/img1.jpg" alt="">
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="studio-name">Sol Solace Studio</div>
+    <div class="hook">53 acres of private Texas land.<br><br>45 minutes from Austin.</div>
+    <div class="divider"></div>
+    <div class="details">Luxury cabins · Saltwater pool · Sauna<br>Walking trails · Chef's kitchen<br><br>El Salto Sagrado · April 10–12</div>
+    <div class="cta-btn">See Serana</div>
+  </div>
+</div>
+<div class="ad-label">Ad 5: The Setting — Story (1080×1920)</div>
+</div>
+
+<!-- ═══════════ AD 6: The Setting — Feed ═══════════ -->
+<div>
+<div class="ad feed" id="ad6">
+  <img src="images/img3.jpg" alt="">
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="studio-name">Sol Solace Studio</div>
+    <div class="hook">This is where you'll spend the weekend.</div>
+    <div class="divider"></div>
+    <div class="details">Serana: Post Oak cabins · Saltwater pool · Sauna<br>53 private acres near Bastrop<br><br>El Salto Sagrado · April 10–12</div>
+    <div class="cta-btn">Explore the Property</div>
+  </div>
+</div>
+<div class="ad-label">Ad 6: The Setting — Feed (1080×1080)</div>
+</div>
+
+</body>
+</html>

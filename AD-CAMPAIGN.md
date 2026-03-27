@@ -120,15 +120,15 @@ Per the [ad-creative skill framework](https://github.com/coreyhaines31/marketing
 **Story/Reel Ad:**
 | Field | Copy | Chars |
 |-------|------|-------|
-| Primary | You've been in constant motion. This weekend, pause — and release what's complete. | 84 ✅ |
+| Primary | You've been in constant motion. This weekend, pause. Release what's complete. | 79 ✅ |
 | Headline | Reserve your spot · April 10–12 | 31 ✅ |
 | CTA | Learn More | — |
 
 **Feed Ad:**
 | Field | Copy | Chars |
 |-------|------|-------|
-| Primary | Not everything you've been carrying is meant to come with you into the next cycle. ¶ El Salto Sagrado — a weekend of intentional transition on 53 acres of private Texas land. ¶ April 10–12 · Paige, TX · Limited spots. | 224 (125 visible) ✅ |
-| Headline | The Sacred Leap — Spring Retreat | 33 ✅ |
+| Primary | Not everything you've been carrying is meant to come with you into the next cycle. ¶ El Salto Sagrado. A weekend of intentional transition on 53 acres of private Texas land. ¶ April 10–12 · Paige, TX · Limited spots. | 222 (125 visible) ✅ |
+| Headline | The Sacred Leap, Spring Retreat | 31 ✅ |
 | CTA | Learn More | — |
 
 **Alt variation (B test):**
@@ -146,7 +146,7 @@ Per the [ad-creative skill framework](https://github.com/coreyhaines31/marketing
 **Story/Reel Ad:**
 | Field | Copy | Chars |
 |-------|------|-------|
-| Primary | Cacao ceremony. Fire ritual. Saltwater pool. Sauna. 53 private acres. Not a spa — a threshold. | 94 ✅ |
+| Primary | Cacao ceremony. Fire ritual. Saltwater pool. Sauna. 53 private acres of Texas grassland. | 90 ✅ |
 | Headline | April 10–12 · Paige, TX | 24 ✅ |
 | CTA | Learn More | — |
 
@@ -206,6 +206,7 @@ Per the [ad-creative skill framework](https://github.com/coreyhaines31/marketing
 | Field | Copy | Chars |
 |-------|------|-------|
 | Primary | Serana: 53 acres of private Texas grassland, 45 minutes from Austin. ¶ Post Oak cabins with en-suite bathrooms. Saltwater pool. Sauna. Walking trails. ¶ This is where you'll spend the weekend. ¶ El Salto Sagrado · April 10–12 | 243 (hooks in 68) ✅ |
+
 | Headline | Explore the property | 20 ✅ |
 | CTA | Learn More | — |
 
@@ -226,14 +227,14 @@ Per the [ad-creative skill framework](https://github.com/coreyhaines31/marketing
 **Story/Reel Ad:**
 | Field | Copy | Chars |
 |-------|------|-------|
-| Primary | This is for you if you've been running and feel the cost of it. Not a spa day — a sacred pause. | 95 ✅ |
+| Primary | This is for you if something in your life is no longer sustainable. And you're ready to do something about it. | 110 ✅ |
 | Headline | Is this your moment? | 21 ✅ |
 | CTA | Learn More | — |
 
 **Feed Ad:**
 | Field | Copy | Chars |
 |-------|------|-------|
-| Primary | This is for you if: ¶ ✦ Something in your life is no longer sustainable ¶ ✦ You're ready to release what no longer aligns ¶ ✦ You value ceremony, depth, and cultural reverence ¶ ✦ You want action — grounded and intentional ¶ ¶ This is NOT a spa retreat. It's a sacred pause. ¶ April 10–12 · Serana, Paige TX | 307 (hooks in 19) ✅ |
+| Primary | This is for you if: ¶ ✦ Something in your life is no longer sustainable ¶ ✦ You're ready to release what no longer aligns ¶ ✦ You value ceremony, depth, and cultural reverence ¶ ✦ You want action, grounded and intentional ¶ ¶ This is not a spa retreat. It's something different entirely. ¶ April 10–12 · Serana, Paige TX | 310 (hooks in 19) ✅ |
 | Headline | Read more + reserve your spot | 30 ✅ |
 | CTA | Learn More | — |
 

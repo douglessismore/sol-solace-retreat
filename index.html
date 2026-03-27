@@ -1,0 +1,1531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Salto Sagrado — Spring Retreat at Serana | Sol Solace Studio</title>
+
+  <!-- Open Graph / Social Preview -->
+  <meta property="og:title" content="El Salto Sagrado — Spring Retreat at Serana | Sol Solace Studio">
+  <meta property="og:description" content="The Sacred Leap. April 10–12, 2026 in Paige, Texas. A weekend of ceremony, bodywork, reflection, and connection at a stunning Hill Country property.">
+  <meta property="og:type" content="website">
+  <!-- Replace with actual image URL after deploy -->
+  <meta property="og:image" content="https://retreat.solsolacestudio.com/images/og-image.jpg">
+  <meta property="og:url" content="https://retreat.solsolacestudio.com">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta name="description" content="El Salto Sagrado — The Sacred Leap. Sol Solace Studio Spring Retreat at Serana. April 10–12, 2026. Paige, Texas. Ceremony, medicine work, bodywork, reflection, and connection.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Meta Pixel placeholder — replace YOUR_PIXEL_ID -->
+  <!--
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'YOUR_PIXEL_ID');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"/></noscript>
+  -->
+
+  <style>
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --teal: #2A7B88;
+      --teal-deep: #1D5C66;
+      --teal-dark: #164249;
+      --gold: #C8A84E;
+      --gold-light: #D4BA6A;
+      --gold-muted: #B89B3E;
+      --cream: #FAF6F0;
+      --cream-dark: #F0EAE0;
+      --warm-white: #FDFCFA;
+      --charcoal: #2C2C2C;
+      --charcoal-light: #4A4A4A;
+      --text-muted: #7A7468;
+      --sand: #E8DFD0;
+      --sage: #9CAF94;
+
+      --font-display: 'Cormorant Garamond', Georgia, serif;
+      --font-body: 'Outfit', -apple-system, sans-serif;
+
+      --space-xs: 0.5rem;
+      --space-sm: 1rem;
+      --space-md: 2rem;
+      --space-lg: 4rem;
+      --space-xl: 6rem;
+      --space-2xl: 10rem;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      font-family: var(--font-body);
+      font-weight: 300;
+      color: var(--charcoal);
+      background: var(--warm-white);
+      line-height: 1.7;
+      font-size: 16px;
+      overflow-x: hidden;
+    }
+
+    /* ========================
+       UTILITY
+    ======================== */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 var(--space-md);
+    }
+
+    .container--narrow {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 var(--space-md);
+    }
+
+    .text-center { text-align: center; }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      border: 0;
+    }
+
+    /* ========================
+       TYPOGRAPHY
+    ======================== */
+    h1, h2, h3, h4 {
+      font-family: var(--font-display);
+      font-weight: 400;
+      line-height: 1.2;
+    }
+
+    .section-label {
+      font-family: var(--font-body);
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold-muted);
+      margin-bottom: var(--space-sm);
+    }
+
+    .section-heading {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      color: var(--teal-dark);
+      margin-bottom: var(--space-md);
+      font-weight: 300;
+    }
+
+    .section-body {
+      font-size: 1.05rem;
+      color: var(--charcoal-light);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* ========================
+       ANIMATIONS
+    ======================== */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+
+    /* ========================
+       HERO
+    ======================== */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+      background: var(--teal-dark);
+    }
+
+    .hero__bg {
+      position: absolute;
+      inset: 0;
+      background-image: url('images/hero.jpg');
+      background-size: cover;
+      background-position: center 40%;
+      opacity: 0.45;
+    }
+
+    .hero__overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        rgba(22, 66, 73, 0.3) 0%,
+        rgba(22, 66, 73, 0.6) 100%
+      );
+    }
+
+    .hero__content {
+      position: relative;
+      z-index: 2;
+      padding: var(--space-lg) var(--space-md);
+      max-width: 800px;
+    }
+
+    .hero__logo-text {
+      font-family: var(--font-body);
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      margin-bottom: var(--space-lg);
+      opacity: 0;
+      animation: fadeUp 1s ease 0.3s forwards;
+    }
+
+    .hero__title {
+      font-family: var(--font-display);
+      font-size: clamp(2.8rem, 7vw, 5rem);
+      font-weight: 300;
+      color: var(--cream);
+      line-height: 1.1;
+      margin-bottom: var(--space-sm);
+      opacity: 0;
+      animation: fadeUp 1s ease 0.5s forwards;
+    }
+
+    .hero__subtitle-sacred {
+      font-family: var(--font-display);
+      font-size: clamp(1rem, 2vw, 1.3rem);
+      font-weight: 300;
+      font-style: italic;
+      color: var(--gold-light);
+      letter-spacing: 0.08em;
+      margin-bottom: var(--space-md);
+      opacity: 0;
+      animation: fadeUp 1s ease 0.6s forwards;
+    }
+
+    .hero__subtitle {
+      font-family: var(--font-display);
+      font-size: clamp(0.95rem, 2vw, 1.15rem);
+      font-weight: 300;
+      color: rgba(250, 246, 240, 0.7);
+      margin-bottom: var(--space-xs);
+      letter-spacing: 0.04em;
+      opacity: 0;
+      animation: fadeUp 1s ease 0.75s forwards;
+    }
+
+    .hero__location {
+      font-family: var(--font-body);
+      font-size: 0.8rem;
+      font-weight: 400;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: rgba(250, 246, 240, 0.5);
+      margin-bottom: var(--space-lg);
+      opacity: 0;
+      animation: fadeUp 1s ease 0.85s forwards;
+    }
+
+    .hero__cta {
+      display: inline-block;
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--teal-dark);
+      background: var(--gold);
+      padding: 1rem 2.5rem;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      opacity: 0;
+      animation: fadeUp 1s ease 1.05s forwards;
+    }
+
+    .hero__cta:hover {
+      background: var(--gold-light);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(200, 168, 78, 0.3);
+    }
+
+    .hero__scroll {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      opacity: 0;
+      animation: fadeUp 1s ease 1.3s forwards;
+    }
+
+    .hero__scroll-line {
+      width: 1px;
+      height: 50px;
+      background: rgba(250, 246, 240, 0.3);
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero__scroll-line::after {
+      content: '';
+      position: absolute;
+      top: -50px;
+      left: 0;
+      width: 1px;
+      height: 50px;
+      background: var(--gold-light);
+      animation: scrollLine 2s ease infinite;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes scrollLine {
+      0% { top: -50px; }
+      100% { top: 50px; }
+    }
+
+    /* ========================
+       COUNTDOWN
+    ======================== */
+    .countdown {
+      background: var(--teal-dark);
+      padding: var(--space-md) 0;
+      text-align: center;
+    }
+
+    .countdown__inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-md);
+      flex-wrap: wrap;
+    }
+
+    .countdown__label {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-style: italic;
+      color: rgba(250, 246, 240, 0.7);
+    }
+
+    .countdown__timer {
+      display: flex;
+      gap: var(--space-sm);
+    }
+
+    .countdown__unit {
+      text-align: center;
+    }
+
+    .countdown__number {
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      font-weight: 400;
+      color: var(--gold-light);
+      line-height: 1;
+    }
+
+    .countdown__unit-label {
+      font-family: var(--font-body);
+      font-size: 0.65rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: rgba(250, 246, 240, 0.5);
+      margin-top: 4px;
+    }
+
+    /* ========================
+       ABOUT SECTION
+    ======================== */
+    .about {
+      padding: var(--space-xl) 0;
+      background: var(--warm-white);
+    }
+
+    .about__grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-lg);
+      align-items: center;
+    }
+
+    .about__text {
+      text-align: center;
+    }
+
+    .about__body {
+      font-size: 1.1rem;
+      color: var(--charcoal-light);
+      line-height: 1.9;
+      margin-bottom: var(--space-md);
+    }
+
+    .about__body strong {
+      font-weight: 500;
+      color: var(--charcoal);
+    }
+
+    .about__divider {
+      width: 60px;
+      height: 1px;
+      background: var(--gold);
+      margin: var(--space-md) auto;
+    }
+
+    .about__highlights {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: var(--space-sm) var(--space-md);
+      list-style: none;
+      margin-top: var(--space-md);
+    }
+
+    .about__highlights li {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-style: italic;
+      color: var(--teal);
+      position: relative;
+    }
+
+    .about__highlights li:not(:last-child)::after {
+      content: '\00B7';
+      margin-left: var(--space-md);
+      color: var(--gold);
+    }
+
+    /* ========================
+       PROPERTY SECTION
+    ======================== */
+    .property {
+      padding: var(--space-xl) 0;
+      background: var(--cream);
+    }
+
+    .property__intro {
+      text-align: center;
+      margin-bottom: var(--space-lg);
+    }
+
+    .property__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-xs);
+      margin-bottom: var(--space-md);
+    }
+
+    .property__img {
+      width: 100%;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+      display: block;
+      background: var(--sand);
+      transition: transform 0.6s ease;
+    }
+
+    .property__img-wrapper {
+      overflow: hidden;
+    }
+
+    .property__img-wrapper:hover .property__img {
+      transform: scale(1.05);
+    }
+
+    .property__img-wrapper:first-child {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    .property__img-wrapper:first-child .property__img {
+      aspect-ratio: auto;
+      height: 100%;
+    }
+
+    .property__amenities {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: var(--space-sm) var(--space-md);
+      list-style: none;
+      text-align: center;
+      margin-top: var(--space-lg);
+    }
+
+    .property__amenity {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      min-width: 100px;
+    }
+
+    .property__amenity-icon {
+      font-size: 1.5rem;
+      opacity: 0.7;
+    }
+
+    .property__amenity-label {
+      font-size: 0.8rem;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--charcoal-light);
+    }
+
+    .property__link {
+      display: inline-block;
+      margin-top: var(--space-lg);
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--teal);
+      text-decoration: none;
+      padding-bottom: 2px;
+      border-bottom: 1px solid var(--gold);
+      transition: all 0.3s ease;
+    }
+
+    .property__link:hover {
+      color: var(--teal-dark);
+      border-bottom-color: var(--teal);
+    }
+
+    /* ========================
+       INCLUDES SECTION
+    ======================== */
+    .includes {
+      padding: var(--space-xl) 0;
+      background: var(--warm-white);
+    }
+
+    .includes__list {
+      list-style: none;
+      max-width: 500px;
+      margin: var(--space-md) auto 0;
+    }
+
+    .includes__item {
+      display: flex;
+      align-items: baseline;
+      gap: var(--space-sm);
+      padding: var(--space-sm) 0;
+      border-bottom: 1px solid var(--cream-dark);
+      font-size: 1.05rem;
+    }
+
+    .includes__item::before {
+      content: '';
+      display: block;
+      width: 6px;
+      height: 6px;
+      background: var(--gold);
+      border-radius: 50%;
+      flex-shrink: 0;
+      margin-top: 8px;
+    }
+
+    /* ========================
+       PRICING SECTION
+    ======================== */
+    .pricing {
+      padding: var(--space-xl) 0;
+      background: var(--cream);
+    }
+
+    .pricing__intro {
+      text-align: center;
+      margin-bottom: var(--space-lg);
+    }
+
+    .pricing__note {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      font-style: italic;
+      margin-top: var(--space-sm);
+    }
+
+    .pricing__cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-md);
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .pricing-card {
+      background: var(--warm-white);
+      border: 1px solid var(--cream-dark);
+      padding: var(--space-md);
+      text-align: center;
+      position: relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .pricing-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+    }
+
+    .pricing-card--featured {
+      border-color: var(--gold);
+      box-shadow: 0 4px 20px rgba(200, 168, 78, 0.15);
+    }
+
+    .pricing-card--featured::before {
+      content: 'Most Popular';
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--gold);
+      color: var(--warm-white);
+      font-family: var(--font-body);
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 4px 16px;
+      white-space: nowrap;
+    }
+
+    .pricing-card__type {
+      font-family: var(--font-body);
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: var(--space-xs);
+    }
+
+    .pricing-card__title {
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      color: var(--teal-dark);
+      margin-bottom: var(--space-sm);
+    }
+
+    .pricing-card__desc {
+      font-size: 0.9rem;
+      color: var(--charcoal-light);
+      margin-bottom: var(--space-md);
+      line-height: 1.7;
+    }
+
+    .pricing-card__divider {
+      width: 40px;
+      height: 1px;
+      background: var(--sand);
+      margin: var(--space-md) auto;
+    }
+
+    .pricing-card__amenities {
+      list-style: none;
+      text-align: left;
+      margin-bottom: var(--space-md);
+    }
+
+    .pricing-card__amenities li {
+      font-size: 0.88rem;
+      color: var(--charcoal-light);
+      padding: 6px 0;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .pricing-card__amenities li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 13px;
+      width: 8px;
+      height: 1px;
+      background: var(--gold);
+    }
+
+    .pricing-card__prices {
+      margin-bottom: var(--space-md);
+    }
+
+    .pricing-card__early {
+      position: relative;
+    }
+
+    .pricing-card__early-badge {
+      display: inline-block;
+      background: var(--teal);
+      color: white;
+      font-family: var(--font-body);
+      font-size: 0.6rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      margin-bottom: 8px;
+    }
+
+    .pricing-card__price {
+      font-family: var(--font-display);
+      font-size: 2.2rem;
+      font-weight: 400;
+      color: var(--teal-dark);
+      line-height: 1;
+    }
+
+    .pricing-card__price-label {
+      font-family: var(--font-body);
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    .pricing-card__standard {
+      margin-top: var(--space-sm);
+      padding-top: var(--space-sm);
+      border-top: 1px solid var(--cream-dark);
+    }
+
+    .pricing-card__standard .pricing-card__price {
+      font-size: 1.4rem;
+      color: var(--charcoal-light);
+    }
+
+    .pricing-card__cta {
+      display: block;
+      width: 100%;
+      font-family: var(--font-body);
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--warm-white);
+      background: var(--teal);
+      padding: 1rem;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+
+    .pricing-card__cta:hover {
+      background: var(--teal-dark);
+      transform: translateY(-1px);
+    }
+
+    .pricing-card--featured .pricing-card__cta {
+      background: var(--gold-muted);
+    }
+
+    .pricing-card--featured .pricing-card__cta:hover {
+      background: var(--gold);
+    }
+
+    /* ========================
+       AVAILABILITY BANNER
+    ======================== */
+    .availability {
+      background: var(--teal-dark);
+      padding: var(--space-md) 0;
+      text-align: center;
+    }
+
+    .availability__text {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      font-style: italic;
+      color: var(--cream);
+    }
+
+    .availability__spots {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: var(--space-xs) var(--space-md);
+      list-style: none;
+      margin-top: var(--space-sm);
+    }
+
+    .availability__spots li {
+      font-family: var(--font-body);
+      font-size: 0.8rem;
+      font-weight: 400;
+      letter-spacing: 0.1em;
+      color: var(--gold-light);
+    }
+
+    /* ========================
+       FAQ SECTION
+    ======================== */
+    .faq {
+      padding: var(--space-xl) 0;
+      background: var(--warm-white);
+    }
+
+    .faq__list {
+      max-width: 700px;
+      margin: var(--space-md) auto 0;
+    }
+
+    .faq__item {
+      border-bottom: 1px solid var(--cream-dark);
+    }
+
+    .faq__question {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: var(--space-sm) 0;
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      color: var(--charcoal);
+      background: none;
+      border: none;
+      cursor: pointer;
+      text-align: left;
+      transition: color 0.3s ease;
+    }
+
+    .faq__question:hover {
+      color: var(--teal);
+    }
+
+    .faq__icon {
+      font-size: 1.2rem;
+      color: var(--gold);
+      transition: transform 0.3s ease;
+      flex-shrink: 0;
+      margin-left: var(--space-sm);
+    }
+
+    .faq__item.active .faq__icon {
+      transform: rotate(45deg);
+    }
+
+    .faq__answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.4s ease;
+    }
+
+    .faq__item.active .faq__answer {
+      max-height: 300px;
+      padding-bottom: var(--space-sm);
+    }
+
+    .faq__answer p {
+      font-size: 0.95rem;
+      color: var(--charcoal-light);
+      line-height: 1.8;
+    }
+
+    /* ========================
+       EMAIL CAPTURE
+    ======================== */
+    .capture {
+      padding: var(--space-lg) 0;
+      background: var(--cream);
+      text-align: center;
+    }
+
+    .capture__heading {
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      font-style: italic;
+      color: var(--teal-dark);
+      margin-bottom: var(--space-xs);
+    }
+
+    .capture__subtext {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: var(--space-md);
+    }
+
+    .capture__form {
+      display: flex;
+      gap: var(--space-xs);
+      max-width: 500px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .capture__input {
+      flex: 1;
+      min-width: 200px;
+      padding: 0.85rem 1.2rem;
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      border: 1px solid var(--sand);
+      background: var(--warm-white);
+      color: var(--charcoal);
+      outline: none;
+      transition: border-color 0.3s ease;
+    }
+
+    .capture__input::placeholder {
+      color: var(--text-muted);
+    }
+
+    .capture__input:focus {
+      border-color: var(--teal);
+    }
+
+    .capture__btn {
+      font-family: var(--font-body);
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--warm-white);
+      background: var(--teal);
+      padding: 0.85rem 1.8rem;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .capture__btn:hover {
+      background: var(--teal-dark);
+    }
+
+    .capture__success {
+      display: none;
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-style: italic;
+      color: var(--teal);
+      margin-top: var(--space-sm);
+    }
+
+    /* ========================
+       FOOTER
+    ======================== */
+    .footer {
+      background: var(--charcoal);
+      padding: var(--space-lg) 0 var(--space-md);
+      text-align: center;
+    }
+
+    .footer__logo {
+      font-family: var(--font-body);
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: var(--space-md);
+    }
+
+    .footer__contact {
+      margin-bottom: var(--space-md);
+    }
+
+    .footer__contact a {
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      color: rgba(250, 246, 240, 0.7);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(250, 246, 240, 0.2);
+      transition: all 0.3s ease;
+    }
+
+    .footer__contact a:hover {
+      color: var(--gold-light);
+      border-bottom-color: var(--gold-light);
+    }
+
+    .footer__social {
+      margin-bottom: var(--space-md);
+    }
+
+    .footer__social a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--font-body);
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(250, 246, 240, 0.5);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .footer__social a:hover {
+      color: var(--gold-light);
+    }
+
+    .footer__divider {
+      width: 40px;
+      height: 1px;
+      background: rgba(250, 246, 240, 0.15);
+      margin: var(--space-md) auto;
+    }
+
+    .footer__copy {
+      font-size: 0.75rem;
+      color: rgba(250, 246, 240, 0.3);
+    }
+
+    /* ========================
+       RESPONSIVE
+    ======================== */
+    @media (max-width: 900px) {
+      .pricing__cards {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+      }
+
+      .property__grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .property__img-wrapper:first-child {
+        grid-column: span 2;
+        grid-row: span 1;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .hero__title {
+        font-size: 2.4rem;
+      }
+
+      .property__grid {
+        grid-template-columns: 1fr;
+      }
+
+      .property__img-wrapper:first-child {
+        grid-column: span 1;
+      }
+
+      .about__highlights li:not(:last-child)::after {
+        display: none;
+      }
+
+      .about__highlights {
+        flex-direction: column;
+        gap: var(--space-xs);
+      }
+
+      .countdown__inner {
+        flex-direction: column;
+        gap: var(--space-sm);
+      }
+
+      .capture__form {
+        flex-direction: column;
+      }
+
+      .capture__input {
+        min-width: unset;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="top">
+    <div class="hero__bg" id="heroBg"></div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <p class="hero__logo-text">Sol Solace Studio presents</p>
+      <h1 class="hero__title">El Salto Sagrado</h1>
+      <p class="hero__subtitle-sacred">The Sacred Leap</p>
+      <p class="hero__subtitle">Spring Retreat at Serana &middot; April 10 &ndash; 12, 2026</p>
+      <p class="hero__location">Paige, Texas &middot; Near Bastrop</p>
+      <a href="#pricing" class="hero__cta">Reserve Your Spot</a>
+    </div>
+    <div class="hero__scroll" aria-hidden="true">
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===================== COUNTDOWN ===================== -->
+  <section class="countdown" aria-label="Countdown to retreat">
+    <div class="container">
+      <div class="countdown__inner">
+        <span class="countdown__label">The retreat begins in</span>
+        <div class="countdown__timer" id="countdown">
+          <div class="countdown__unit">
+            <div class="countdown__number" id="cd-days">--</div>
+            <div class="countdown__unit-label">Days</div>
+          </div>
+          <div class="countdown__unit">
+            <div class="countdown__number" id="cd-hours">--</div>
+            <div class="countdown__unit-label">Hours</div>
+          </div>
+          <div class="countdown__unit">
+            <div class="countdown__number" id="cd-mins">--</div>
+            <div class="countdown__unit-label">Minutes</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="about" id="about">
+    <div class="container--narrow text-center">
+      <div class="about__text">
+        <p class="section-label reveal">The Invitation</p>
+        <h2 class="section-heading reveal reveal-delay-1">Enter a new cycle <br>with intention</h2>
+        <p class="about__body reveal reveal-delay-2">
+          This weekend is an invitation to step away from the pace of daily life and into
+          something more intentional. Together, we will move through <strong>ceremony, medicine work,
+          bodywork, reflection, and connection</strong>, supported by the land and one another.
+        </p>
+        <p class="about__body reveal reveal-delay-3">
+          Each person who joins contributes to the depth of the experience, creating
+          something that is both grounding and transformative. We are holding this
+          experience for those who feel genuinely called to step into this kind of work
+          at this time.
+        </p>
+        <div class="about__divider reveal reveal-delay-3"></div>
+        <ul class="about__highlights reveal reveal-delay-4">
+          <li>Ceremony</li>
+          <li>Medicine Work</li>
+          <li>Bodywork</li>
+          <li>Reflection</li>
+          <li>Connection</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROPERTY ===================== -->
+  <section class="property" id="property">
+    <div class="container">
+      <div class="property__intro reveal">
+        <p class="section-label text-center">The Setting</p>
+        <h2 class="section-heading text-center">Serana</h2>
+        <p class="section-body text-center">
+          A stunning property in the Texas Hill Country offering luxury cabins,
+          expansive land, and a quiet, grounding environment for deep work.
+        </p>
+      </div>
+
+      <div class="property__grid reveal">
+        <div class="property__img-wrapper">
+          <img class="property__img" src="images/img1.jpg" alt="The Lodge — communal dining and gathering space at Serana" loading="lazy">
+        </div>
+        <div class="property__img-wrapper">
+          <img class="property__img" src="images/img2.jpg" alt="Luxury Post Oak Cabin exterior with patio seating" loading="lazy">
+        </div>
+        <div class="property__img-wrapper">
+          <img class="property__img" src="images/img4.jpg" alt="Kitchen bar with handcrafted pendant lights" loading="lazy">
+        </div>
+        <div class="property__img-wrapper">
+          <img class="property__img" src="images/img3.jpg" alt="Outdoor yoga and meditation on the grounds" loading="lazy">
+        </div>
+      </div>
+
+      <ul class="property__amenities reveal">
+        <li class="property__amenity">
+          <span class="property__amenity-icon" aria-hidden="true">&#9832;</span>
+          <span class="property__amenity-label">Saltwater Pool</span>
+        </li>
+        <li class="property__amenity">
+          <span class="property__amenity-icon" aria-hidden="true">&#9854;</span>
+          <span class="property__amenity-label">Sauna</span>
+        </li>
+        <li class="property__amenity">
+          <span class="property__amenity-icon" aria-hidden="true">&#9752;</span>
+          <span class="property__amenity-label">Walking Trails</span>
+        </li>
+        <li class="property__amenity">
+          <span class="property__amenity-icon" aria-hidden="true">&#9733;</span>
+          <span class="property__amenity-label">Luxury Cabins</span>
+        </li>
+        <li class="property__amenity">
+          <span class="property__amenity-icon" aria-hidden="true">&#9883;</span>
+          <span class="property__amenity-label">Healing Spaces</span>
+        </li>
+      </ul>
+
+      <div class="text-center reveal">
+        <a href="https://www.seranatx.com" target="_blank" rel="noopener" class="property__link">
+          Explore Serana &rarr;
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== INCLUDES ===================== -->
+  <section class="includes" id="includes">
+    <div class="container--narrow text-center">
+      <p class="section-label reveal">What's Included</p>
+      <h2 class="section-heading reveal reveal-delay-1">Your Weekend</h2>
+      <p class="section-body reveal reveal-delay-2">
+        Every ticket includes the full retreat experience from Friday evening through Sunday.
+      </p>
+      <ul class="includes__list">
+        <li class="includes__item reveal">Friday Opening Ceremony</li>
+        <li class="includes__item reveal reveal-delay-1">Full Saturday Programming</li>
+        <li class="includes__item reveal reveal-delay-2">Sunday Closing Ceremony</li>
+        <li class="includes__item reveal reveal-delay-3">Full access to sauna, pool, gym, land &amp; healing spaces</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===================== PRICING ===================== -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="pricing__intro reveal">
+        <p class="section-label text-center">Pricing &amp; Accommodations</p>
+        <h2 class="section-heading text-center">Choose Your Experience</h2>
+        <p class="section-body text-center">
+          Attend as a commuter or stay on-site in one of Serana's beautiful accommodations.
+          On-site guests book a base ticket plus their cabin of choice.
+        </p>
+        <p class="pricing__note text-center">Overnight accommodations are limited.</p>
+      </div>
+
+      <div class="pricing__cards">
+        <!-- COMMUTER / BASE TICKET -->
+        <div class="pricing-card reveal">
+          <p class="pricing-card__type">Commuter</p>
+          <h3 class="pricing-card__title">Base Ticket</h3>
+          <p class="pricing-card__desc">
+            The full retreat experience without sleeping on-site.
+            Travel to the property each day and participate fully.
+          </p>
+          <div class="pricing-card__divider"></div>
+          <div class="pricing-card__prices">
+            <div class="pricing-card__early">
+              <span class="pricing-card__early-badge">Early Bird</span>
+              <div class="pricing-card__price">$595</div>
+              <div class="pricing-card__price-label">Limited spots</div>
+            </div>
+            <div class="pricing-card__standard">
+              <div class="pricing-card__price">$675</div>
+              <div class="pricing-card__price-label">Standard</div>
+            </div>
+          </div>
+          <!-- Replace # with Square Payment Link -->
+          <a href="#" class="pricing-card__cta" data-booking="base">Book Now</a>
+        </div>
+
+        <!-- LUXURY CABIN -->
+        <div class="pricing-card pricing-card--featured reveal reveal-delay-1">
+          <p class="pricing-card__type">Stay On-Site</p>
+          <h3 class="pricing-card__title">Luxury Cabin</h3>
+          <p class="pricing-card__desc">
+            Brand new Post Oak Cabins with private en-suite bathroom,
+            king bed, and french doors overlooking the property.
+          </p>
+          <div class="pricing-card__divider"></div>
+          <ul class="pricing-card__amenities">
+            <li>Private, spa-like en-suite bathroom</li>
+            <li>Organic cotton king-sized mattress</li>
+            <li>Brooklinen bath towels</li>
+            <li>352 sq ft indoor + 160 sq ft outdoor</li>
+            <li>Mini fridge + organic coffee station</li>
+            <li>Central heat/AC</li>
+          </ul>
+          <div class="pricing-card__prices">
+            <div class="pricing-card__early">
+              <span class="pricing-card__early-badge">Early Bird</span>
+              <div class="pricing-card__price">$1,070</div>
+              <div class="pricing-card__price-label">Base ticket + cabin</div>
+            </div>
+            <div class="pricing-card__standard">
+              <div class="pricing-card__price">$1,250</div>
+              <div class="pricing-card__price-label">Standard</div>
+            </div>
+          </div>
+          <a href="#" class="pricing-card__cta" data-booking="luxury">Book Now</a>
+        </div>
+
+        <!-- FIELD CABIN -->
+        <div class="pricing-card reveal reveal-delay-2">
+          <p class="pricing-card__type">Stay On-Site</p>
+          <h3 class="pricing-card__title">Field Cabin</h3>
+          <p class="pricing-card__desc">
+            Cozy Kampinas with queen bed and access to the modern
+            open-air bathhouse with private rooms.
+          </p>
+          <div class="pricing-card__divider"></div>
+          <ul class="pricing-card__amenities">
+            <li>Queen memory foam mattress</li>
+            <li>Turkish bath towels</li>
+            <li>Private bathhouse room (toilet, sink, shower)</li>
+            <li>Ample hot water</li>
+            <li>Cozy 120 sq ft</li>
+            <li>Central heat/AC</li>
+          </ul>
+          <div class="pricing-card__prices">
+            <div class="pricing-card__early">
+              <span class="pricing-card__early-badge">Early Bird</span>
+              <div class="pricing-card__price">$920</div>
+              <div class="pricing-card__price-label">Base ticket + cabin</div>
+            </div>
+            <div class="pricing-card__standard">
+              <div class="pricing-card__price">$1,100</div>
+              <div class="pricing-card__price-label">Standard</div>
+            </div>
+          </div>
+          <a href="#" class="pricing-card__cta" data-booking="field">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== AVAILABILITY ===================== -->
+  <section class="availability">
+    <div class="container">
+      <p class="availability__text">Spaces are filling. Here's what remains:</p>
+      <!-- UPDATE THESE MANUALLY AS SPOTS FILL -->
+      <ul class="availability__spots">
+        <li>1 Early Bird Spot</li>
+        <li>&middot;</li>
+        <li>1 Field Cabin</li>
+        <li>&middot;</li>
+        <li>A Few Luxury Cabins</li>
+        <li>&middot;</li>
+        <li>Limited Commuter Passes</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section class="faq" id="faq">
+    <div class="container--narrow">
+      <p class="section-label text-center reveal">Questions</p>
+      <h2 class="section-heading text-center reveal">Before You Arrive</h2>
+
+      <div class="faq__list">
+        <div class="faq__item reveal">
+          <button class="faq__question" aria-expanded="false">
+            Can I bring a friend or partner?
+            <span class="faq__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>Absolutely. Many participants are choosing to come with someone they trust. Having a friend or partner can offer an added layer of support going into the weekend.</p>
+          </div>
+        </div>
+        <div class="faq__item reveal reveal-delay-1">
+          <button class="faq__question" aria-expanded="false">
+            What if I live nearby &mdash; do I need a cabin?
+            <span class="faq__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>Not at all. The Base Ticket (commuter option) gives you full access to the entire retreat experience. You simply travel to the property each day. On-site accommodations are optional for those who want the full immersive stay.</p>
+          </div>
+        </div>
+        <div class="faq__item reveal reveal-delay-2">
+          <button class="faq__question" aria-expanded="false">
+            How do I reserve my spot?
+            <span class="faq__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>Click any "Book Now" button above to complete your registration and payment. If you have questions or want to discuss which option is right for you, reach out to <a href="mailto:hola@solsolacestudio.com" style="color: var(--teal);">hola@solsolacestudio.com</a> &mdash; we're happy to help.</p>
+          </div>
+        </div>
+        <div class="faq__item reveal reveal-delay-3">
+          <button class="faq__question" aria-expanded="false">
+            Is this retreat right for me?
+            <span class="faq__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>If you've been feeling the need for space, clarity, or deeper support, this may be the right time to follow that. This weekend is designed for those who feel genuinely called to step into intentional healing work in a supported, spacious container.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EMAIL CAPTURE ===================== -->
+  <section class="capture">
+    <div class="container--narrow">
+      <h3 class="capture__heading reveal">Not ready yet?</h3>
+      <p class="capture__subtext reveal">Stay in the loop for future retreats and offerings.</p>
+      <form class="capture__form reveal" id="captureForm">
+        <input type="text" class="capture__input" placeholder="Your name" required aria-label="Your name">
+        <input type="email" class="capture__input" placeholder="Email address" required aria-label="Email address">
+        <button type="submit" class="capture__btn">Keep Me Posted</button>
+      </form>
+      <p class="capture__success" id="captureSuccess">Thank you. We'll be in touch.</p>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container--narrow">
+      <p class="footer__logo">Sol Solace Studio</p>
+      <div class="footer__contact">
+        <a href="mailto:hola@solsolacestudio.com">hola@solsolacestudio.com</a>
+      </div>
+      <div class="footer__social">
+        <!-- Replace with actual Instagram URL -->
+        <a href="https://instagram.com/solsolacestudio" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          Follow on Instagram
+        </a>
+      </div>
+      <div class="footer__divider"></div>
+      <p class="footer__copy">&copy; 2026 Sol Solace Studio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    /* ========================
+       COUNTDOWN TIMER
+    ======================== */
+    (function() {
+      const retreatDate = new Date('2026-04-10T17:00:00-05:00'); // 5pm CT April 10
+
+      function updateCountdown() {
+        const now = new Date();
+        const diff = retreatDate - now;
+
+        if (diff <= 0) {
+          document.getElementById('countdown').innerHTML =
+            '<span class="countdown__label" style="color: var(--gold-light);">The retreat has begun.</span>';
+          return;
+        }
+
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+
+        document.getElementById('cd-days').textContent = days;
+        document.getElementById('cd-hours').textContent = hours;
+        document.getElementById('cd-mins').textContent = mins;
+      }
+
+      updateCountdown();
+      setInterval(updateCountdown, 60000);
+    })();
+
+    /* ========================
+       SCROLL REVEAL
+    ======================== */
+    (function() {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.15, rootMargin: '0px 0px -40px 0px' }
+      );
+
+      document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+    })();
+
+    /* ========================
+       FAQ ACCORDION
+    ======================== */
+    (function() {
+      document.querySelectorAll('.faq__question').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const item = btn.parentElement;
+          const isActive = item.classList.contains('active');
+          const expanded = btn.getAttribute('aria-expanded') === 'true';
+
+          // Close all
+          document.querySelectorAll('.faq__item').forEach((i) => {
+            i.classList.remove('active');
+            i.querySelector('.faq__question').setAttribute('aria-expanded', 'false');
+          });
+
+          // Toggle current
+          if (!isActive) {
+            item.classList.add('active');
+            btn.setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
+    })();
+
+    /* ========================
+       EMAIL CAPTURE
+       Replace with actual form handler (Mailchimp, ConvertKit, Google Forms, etc.)
+    ======================== */
+    (function() {
+      const form = document.getElementById('captureForm');
+      const success = document.getElementById('captureSuccess');
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        // TODO: Replace with actual form submission
+        // For now, just show success message
+        form.style.display = 'none';
+        success.style.display = 'block';
+      });
+    })();
+
+
+    /* ========================
+       SMOOTH SCROLL FOR ANCHOR LINKS
+    ======================== */
+    document.querySelectorAll('a[href^="#"]').forEach((a) => {
+      a.addEventListener('click', (e) => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

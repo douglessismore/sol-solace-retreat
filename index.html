@@ -6,15 +6,14 @@
   <title>El Salto Sagrado — Spring Retreat at Serana | Sol Solace Studio</title>
 
   <!-- Open Graph / Social Preview -->
-  <meta property="og:title" content="El Salto Sagrado — Spring Retreat at Serana | Sol Solace Studio">
-  <meta property="og:description" content="The Sacred Leap. April 10–12, 2026 in Paige, Texas. A weekend of ceremony, bodywork, reflection, and connection at a stunning Hill Country property.">
+  <meta property="og:title" content="El Salto Sagrado — A Sacred Pause Between Cycles | Sol Solace Studio">
+  <meta property="og:description" content="The Sacred Leap. April 10–12, 2026 in Paige, Texas. Release what's complete. Step forward with intention. Ceremony, ancestral work, bodywork, and integration at Serana.">
   <meta property="og:type" content="website">
-  <!-- Replace with actual image URL after deploy -->
   <meta property="og:image" content="https://retreat.solsolacestudio.com/images/og-image.jpg">
   <meta property="og:url" content="https://retreat.solsolacestudio.com">
   <meta name="twitter:card" content="summary_large_image">
 
-  <meta name="description" content="El Salto Sagrado — The Sacred Leap. Sol Solace Studio Spring Retreat at Serana. April 10–12, 2026. Paige, Texas. Ceremony, medicine work, bodywork, reflection, and connection.">
+  <meta name="description" content="El Salto Sagrado — The Sacred Leap. Sol Solace Studio Spring Retreat at Serana. April 10–12, 2026. Paige, Texas. Ceremony, ancestral work, bodywork, reflection, and connection.">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -239,9 +238,32 @@
       font-style: italic;
       color: var(--gold-light);
       letter-spacing: 0.08em;
-      margin-bottom: var(--space-md);
+      margin-bottom: var(--space-sm);
       opacity: 0;
       animation: fadeUp 1s ease 0.6s forwards;
+    }
+
+    .hero__tagline {
+      font-family: var(--font-display);
+      font-size: clamp(1.05rem, 2.2vw, 1.35rem);
+      font-weight: 300;
+      color: rgba(250, 246, 240, 0.85);
+      line-height: 1.5;
+      margin-bottom: var(--space-xs);
+      opacity: 0;
+      animation: fadeUp 1s ease 0.7s forwards;
+    }
+
+    .hero__tagline-sub {
+      font-family: var(--font-display);
+      font-size: clamp(0.9rem, 1.8vw, 1.05rem);
+      font-weight: 300;
+      font-style: italic;
+      color: rgba(250, 246, 240, 0.55);
+      line-height: 1.6;
+      margin-bottom: var(--space-md);
+      opacity: 0;
+      animation: fadeUp 1s ease 0.8s forwards;
     }
 
     .hero__subtitle {
@@ -252,7 +274,7 @@
       margin-bottom: var(--space-xs);
       letter-spacing: 0.04em;
       opacity: 0;
-      animation: fadeUp 1s ease 0.75s forwards;
+      animation: fadeUp 1s ease 0.85s forwards;
     }
 
     .hero__location {
@@ -264,7 +286,7 @@
       color: rgba(250, 246, 240, 0.5);
       margin-bottom: var(--space-lg);
       opacity: 0;
-      animation: fadeUp 1s ease 0.85s forwards;
+      animation: fadeUp 1s ease 0.95s forwards;
     }
 
     .hero__cta {
@@ -282,7 +304,7 @@
       text-decoration: none;
       transition: all 0.3s ease;
       opacity: 0;
-      animation: fadeUp 1s ease 1.05s forwards;
+      animation: fadeUp 1s ease 1.1s forwards;
     }
 
     .hero__cta:hover {
@@ -382,64 +404,260 @@
     }
 
     /* ========================
-       ABOUT SECTION
+       INVITATION SECTION
     ======================== */
-    .about {
+    .invitation {
       padding: var(--space-xl) 0;
       background: var(--warm-white);
     }
 
-    .about__grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: var(--space-lg);
-      align-items: center;
-    }
-
-    .about__text {
+    .invitation__text {
       text-align: center;
     }
 
-    .about__body {
+    .invitation__body {
       font-size: 1.1rem;
       color: var(--charcoal-light);
       line-height: 1.9;
       margin-bottom: var(--space-md);
     }
 
-    .about__body strong {
+    .invitation__body strong {
       font-weight: 500;
       color: var(--charcoal);
     }
 
-    .about__divider {
+    .invitation__poetic {
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-style: italic;
+      color: var(--teal);
+      line-height: 1.8;
+      margin-bottom: var(--space-md);
+    }
+
+    .invitation__divider {
       width: 60px;
       height: 1px;
       background: var(--gold);
       margin: var(--space-md) auto;
     }
 
-    .about__highlights {
+    .invitation__forces {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: var(--space-sm) var(--space-md);
-      list-style: none;
+      gap: var(--space-md) var(--space-lg);
       margin-top: var(--space-md);
     }
 
-    .about__highlights li {
+    .invitation__force {
+      text-align: center;
+      max-width: 280px;
+    }
+
+    .invitation__force-name {
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      font-style: italic;
+      color: var(--teal-dark);
+      margin-bottom: var(--space-xs);
+    }
+
+    .invitation__force-desc {
+      font-size: 0.9rem;
+      color: var(--charcoal-light);
+    }
+
+    .invitation__closing {
+      font-size: 1.05rem;
+      color: var(--charcoal-light);
+      margin-top: var(--space-md);
+      font-style: italic;
+    }
+
+    /* ========================
+       WHO THIS IS FOR
+    ======================== */
+    .who {
+      padding: var(--space-xl) 0;
+      background: var(--cream);
+    }
+
+    .who__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-lg);
+      max-width: 900px;
+      margin: var(--space-md) auto 0;
+    }
+
+    .who__col {
+      text-align: left;
+    }
+
+    .who__col-heading {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      font-style: italic;
+      margin-bottom: var(--space-sm);
+    }
+
+    .who__col-heading--yes {
+      color: var(--teal);
+    }
+
+    .who__col-heading--no {
+      color: var(--text-muted);
+    }
+
+    .who__list {
+      list-style: none;
+    }
+
+    .who__list li {
+      font-size: 0.95rem;
+      color: var(--charcoal-light);
+      padding: 0.6rem 0;
+      padding-left: 24px;
+      position: relative;
+      line-height: 1.6;
+    }
+
+    .who__list--yes li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 14px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--teal);
+      opacity: 0.5;
+    }
+
+    .who__list--no li::before {
+      content: '';
+      position: absolute;
+      left: 2px;
+      top: 16px;
+      width: 8px;
+      height: 1px;
+      background: var(--text-muted);
+    }
+
+    /* ========================
+       EXPERIENCE SECTION
+    ======================== */
+    .experience {
+      padding: var(--space-xl) 0;
+      background: var(--warm-white);
+    }
+
+    .experience__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: var(--space-md);
+      max-width: 900px;
+      margin: var(--space-md) auto 0;
+    }
+
+    .experience__item {
+      text-align: center;
+      padding: var(--space-md) var(--space-sm);
+    }
+
+    .experience__icon {
+      font-size: 1.6rem;
+      margin-bottom: var(--space-sm);
+      opacity: 0.7;
+    }
+
+    .experience__item-title {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      font-style: italic;
+      color: var(--teal-dark);
+      margin-bottom: var(--space-xs);
+    }
+
+    .experience__item-desc {
+      font-size: 0.9rem;
+      color: var(--charcoal-light);
+      line-height: 1.6;
+    }
+
+    .experience__quote {
       font-family: var(--font-display);
       font-size: 1.15rem;
       font-style: italic;
       color: var(--teal);
-      position: relative;
+      text-align: center;
+      max-width: 600px;
+      margin: var(--space-lg) auto 0;
+      line-height: 1.7;
     }
 
-    .about__highlights li:not(:last-child)::after {
-      content: '\00B7';
-      margin-left: var(--space-md);
-      color: var(--gold);
+    /* ========================
+       SCHEDULE SECTION
+    ======================== */
+    .schedule {
+      padding: var(--space-xl) 0;
+      background: var(--cream);
+    }
+
+    .schedule__days {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-md);
+      max-width: 900px;
+      margin: var(--space-md) auto 0;
+    }
+
+    .schedule__day {
+      background: var(--warm-white);
+      padding: var(--space-md);
+      border: 1px solid var(--cream-dark);
+    }
+
+    .schedule__day-name {
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      color: var(--teal-dark);
+      margin-bottom: var(--space-xs);
+    }
+
+    .schedule__day-date {
+      font-family: var(--font-body);
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold-muted);
+      margin-bottom: var(--space-sm);
+    }
+
+    .schedule__day-items {
+      list-style: none;
+    }
+
+    .schedule__day-items li {
+      font-size: 0.9rem;
+      color: var(--charcoal-light);
+      padding: 0.4rem 0;
+      line-height: 1.5;
+      border-bottom: 1px solid var(--cream-dark);
+    }
+
+    .schedule__day-items li:last-child {
+      border-bottom: none;
+    }
+
+    .schedule__note {
+      text-align: center;
+      font-size: 0.85rem;
+      font-style: italic;
+      color: var(--text-muted);
+      margin-top: var(--space-md);
     }
 
     /* ========================
@@ -447,7 +665,7 @@
     ======================== */
     .property {
       padding: var(--space-xl) 0;
-      background: var(--cream);
+      background: var(--warm-white);
     }
 
     .property__intro {
@@ -541,37 +759,28 @@
     }
 
     /* ========================
-       INCLUDES SECTION
+       WHY THIS WORKS
     ======================== */
-    .includes {
-      padding: var(--space-xl) 0;
-      background: var(--warm-white);
+    .why {
+      padding: var(--space-lg) 0;
+      background: var(--teal-dark);
+      text-align: center;
     }
 
-    .includes__list {
-      list-style: none;
-      max-width: 500px;
-      margin: var(--space-md) auto 0;
+    .why__heading {
+      font-family: var(--font-display);
+      font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+      font-weight: 300;
+      color: var(--cream);
+      margin-bottom: var(--space-sm);
     }
 
-    .includes__item {
-      display: flex;
-      align-items: baseline;
-      gap: var(--space-sm);
-      padding: var(--space-sm) 0;
-      border-bottom: 1px solid var(--cream-dark);
-      font-size: 1.05rem;
-    }
-
-    .includes__item::before {
-      content: '';
-      display: block;
-      width: 6px;
-      height: 6px;
-      background: var(--gold);
-      border-radius: 50%;
-      flex-shrink: 0;
-      margin-top: 8px;
+    .why__body {
+      font-size: 1rem;
+      color: rgba(250, 246, 240, 0.7);
+      max-width: 550px;
+      margin: 0 auto;
+      line-height: 1.8;
     }
 
     /* ========================
@@ -714,6 +923,18 @@
       margin-bottom: 8px;
     }
 
+    .pricing-card__early-badge--soldout {
+      background: var(--text-muted);
+    }
+
+    .pricing-card__early--soldout {
+      opacity: 0.45;
+    }
+
+    .pricing-card__early--soldout .pricing-card__price {
+      text-decoration: line-through;
+    }
+
     .pricing-card__price {
       font-family: var(--font-display);
       font-size: 2.2rem;
@@ -805,11 +1026,51 @@
     }
 
     /* ========================
+       SACRED LEAP CTA
+    ======================== */
+    .leap {
+      padding: var(--space-xl) 0;
+      background: var(--warm-white);
+      text-align: center;
+    }
+
+    .leap__body {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      font-style: italic;
+      color: var(--charcoal-light);
+      line-height: 2;
+      margin-bottom: var(--space-md);
+    }
+
+    .leap__cta {
+      display: inline-block;
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--teal-dark);
+      background: var(--gold);
+      padding: 1rem 2.5rem;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .leap__cta:hover {
+      background: var(--gold-light);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(200, 168, 78, 0.3);
+    }
+
+    /* ========================
        FAQ SECTION
     ======================== */
     .faq {
       padding: var(--space-xl) 0;
-      background: var(--warm-white);
+      background: var(--cream);
     }
 
     .faq__list {
@@ -875,7 +1136,7 @@
     ======================== */
     .capture {
       padding: var(--space-lg) 0;
-      background: var(--cream);
+      background: var(--warm-white);
       text-align: center;
     }
 
@@ -909,7 +1170,7 @@
       font-family: var(--font-body);
       font-size: 0.9rem;
       border: 1px solid var(--sand);
-      background: var(--warm-white);
+      background: var(--cream);
       color: var(--charcoal);
       outline: none;
       transition: border-color 0.3s ease;
@@ -1015,6 +1276,14 @@
       margin: var(--space-md) auto;
     }
 
+    .footer__disclaimer {
+      font-size: 0.7rem;
+      color: rgba(250, 246, 240, 0.25);
+      max-width: 500px;
+      margin: 0 auto var(--space-sm);
+      line-height: 1.6;
+    }
+
     .footer__copy {
       font-size: 0.75rem;
       color: rgba(250, 246, 240, 0.3);
@@ -1037,6 +1306,16 @@
         grid-column: span 2;
         grid-row: span 1;
       }
+
+      .schedule__days {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+      }
+
+      .who__grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+      }
     }
 
     @media (max-width: 600px) {
@@ -1052,13 +1331,9 @@
         grid-column: span 1;
       }
 
-      .about__highlights li:not(:last-child)::after {
-        display: none;
-      }
-
-      .about__highlights {
+      .invitation__forces {
         flex-direction: column;
-        gap: var(--space-xs);
+        align-items: center;
       }
 
       .countdown__inner {
@@ -1073,6 +1348,10 @@
       .capture__input {
         min-width: unset;
       }
+
+      .experience__grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
@@ -1086,9 +1365,11 @@
       <p class="hero__logo-text">Sol Solace Studio presents</p>
       <h1 class="hero__title">El Salto Sagrado</h1>
       <p class="hero__subtitle-sacred">The Sacred Leap</p>
+      <p class="hero__tagline">A Sacred Pause Between Who You've Been<br>and Who You're Becoming</p>
+      <p class="hero__tagline-sub">Release what's complete. Step forward with intention.</p>
       <p class="hero__subtitle">Spring Retreat at Serana &middot; April 10 &ndash; 12, 2026</p>
       <p class="hero__location">Paige, Texas &middot; Near Bastrop</p>
-      <a href="#pricing" class="hero__cta">Reserve Your Spot</a>
+      <a href="#pricing" class="hero__cta">Reserve Your Place</a>
     </div>
     <div class="hero__scroll" aria-hidden="true">
       <div class="hero__scroll-line"></div>
@@ -1118,32 +1399,158 @@
     </div>
   </section>
 
-  <!-- ===================== ABOUT ===================== -->
-  <section class="about" id="about">
+  <!-- ===================== THE INVITATION ===================== -->
+  <section class="invitation" id="about">
     <div class="container--narrow text-center">
-      <div class="about__text">
+      <div class="invitation__text">
         <p class="section-label reveal">The Invitation</p>
-        <h2 class="section-heading reveal reveal-delay-1">Enter a new cycle <br>with intention</h2>
-        <p class="about__body reveal reveal-delay-2">
-          This weekend is an invitation to step away from the pace of daily life and into
-          something more intentional. Together, we will move through <strong>ceremony, medicine work,
-          bodywork, reflection, and connection</strong>, supported by the land and one another.
+        <h2 class="section-heading reveal reveal-delay-1">You've been in motion.</h2>
+        <p class="invitation__poetic reveal reveal-delay-2">
+          Creating, producing, holding, pushing.<br>
+          Not everything you've been carrying is meant to come with you into the next cycle.
         </p>
-        <p class="about__body reveal reveal-delay-3">
-          Each person who joins contributes to the depth of the experience, creating
-          something that is both grounding and transformative. We are holding this
-          experience for those who feel genuinely called to step into this kind of work
-          at this time.
+        <p class="invitation__body reveal reveal-delay-2">
+          El Salto Sagrado is a weekend of <strong>intentional transition</strong>&mdash;a
+          space to pause, reflect, release, and step forward with clarity.
         </p>
-        <div class="about__divider reveal reveal-delay-3"></div>
-        <ul class="about__highlights reveal reveal-delay-4">
-          <li>Ceremony</li>
-          <li>Medicine Work</li>
-          <li>Bodywork</li>
-          <li>Reflection</li>
-          <li>Connection</li>
-        </ul>
+        <div class="invitation__divider reveal reveal-delay-3"></div>
+        <p class="section-body reveal reveal-delay-3" style="margin-bottom: var(--space-sm);">We gather at the intersection of two forces:</p>
+        <div class="invitation__forces reveal reveal-delay-4">
+          <div class="invitation__force">
+            <p class="invitation__force-name">Rabbit Energy</p>
+            <p class="invitation__force-desc">Urgency, creation, expansion</p>
+          </div>
+          <div class="invitation__force">
+            <p class="invitation__force-name">Mictlantecuhtli</p>
+            <p class="invitation__force-desc">Endings, transformation, unseen guidance</p>
+          </div>
+        </div>
+        <p class="invitation__closing reveal reveal-delay-4">
+          This work is not about doing more. It is about releasing, realigning, and choosing consciously.
+        </p>
       </div>
+    </div>
+  </section>
+
+  <!-- ===================== WHO THIS IS FOR ===================== -->
+  <section class="who" id="who">
+    <div class="container">
+      <p class="section-label text-center reveal">The Container</p>
+      <h2 class="section-heading text-center reveal reveal-delay-1">Who This Is For</h2>
+      <p class="section-body text-center reveal reveal-delay-2">This space is held for those ready to step fully into the work.</p>
+
+      <div class="who__grid">
+        <div class="who__col reveal reveal-delay-3">
+          <p class="who__col-heading who__col-heading--yes">This is for you if:</p>
+          <ul class="who__list who__list--yes">
+            <li>You feel something in your life is no longer sustainable</li>
+            <li>You've been in constant motion and feel the cost of it</li>
+            <li>You are ready to release patterns, roles, or identities that no longer align</li>
+            <li>You want to take action&mdash;but in a way that is grounded, ethical, and intentional</li>
+            <li>You value ceremony, cultural reverence, and depth over surface-level wellness</li>
+            <li>You are open to being seen, honest, and accountable in community</li>
+          </ul>
+        </div>
+        <div class="who__col reveal reveal-delay-4">
+          <p class="who__col-heading who__col-heading--no">This is not for you if:</p>
+          <ul class="who__list who__list--no">
+            <li>You are looking for a relaxing spa-style getaway</li>
+            <li>You want constant entertainment or a packed schedule</li>
+            <li>You are not open to self-reflection or personal responsibility</li>
+            <li>You prefer purely physical wellness without emotional or spiritual depth</li>
+            <li>You are not ready to release anything yet</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== WHAT YOU WILL EXPERIENCE ===================== -->
+  <section class="experience" id="experience">
+    <div class="container">
+      <p class="section-label text-center reveal">The Work</p>
+      <h2 class="section-heading text-center reveal reveal-delay-1">What You Will Experience</h2>
+      <p class="section-body text-center reveal reveal-delay-2">Every element of this retreat is designed to guide you through a threshold experience.</p>
+
+      <div class="experience__grid">
+        <div class="experience__item reveal">
+          <div class="experience__icon" aria-hidden="true">&#128293;</div>
+          <p class="experience__item-title">Ceremony &amp; Ritual</p>
+          <p class="experience__item-desc">Fire ceremony, corn doll ritual, cacao circle</p>
+        </div>
+        <div class="experience__item reveal reveal-delay-1">
+          <div class="experience__icon" aria-hidden="true">&#127793;</div>
+          <p class="experience__item-title">Ancestral &amp; Land-Based Work</p>
+          <p class="experience__item-desc">Connection to the land, guided reflection, storytelling</p>
+        </div>
+        <div class="experience__item reveal reveal-delay-2">
+          <div class="experience__icon" aria-hidden="true">&#9832;</div>
+          <p class="experience__item-title">Intentional Integration</p>
+          <p class="experience__item-desc">Pool, sauna, and quiet reflective practices</p>
+        </div>
+        <div class="experience__item reveal reveal-delay-3">
+          <div class="experience__icon" aria-hidden="true">&#128214;</div>
+          <p class="experience__item-title">Guided Reflection</p>
+          <p class="experience__item-desc">Journaling, prompts, and internal processing</p>
+        </div>
+        <div class="experience__item reveal reveal-delay-4">
+          <div class="experience__icon" aria-hidden="true">&#128588;</div>
+          <p class="experience__item-title">Community Witnessing</p>
+          <p class="experience__item-desc">Connection, sharing, and supportive presence</p>
+        </div>
+      </div>
+
+      <p class="experience__quote reveal">
+        &ldquo;Each person who joins contributes to the depth of the experience,
+        shaping something that is both grounding and transformative.&rdquo;
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== SCHEDULE PREVIEW ===================== -->
+  <section class="schedule" id="schedule">
+    <div class="container">
+      <p class="section-label text-center reveal">The Weekend</p>
+      <h2 class="section-heading text-center reveal reveal-delay-1">Schedule Preview</h2>
+
+      <div class="schedule__days">
+        <div class="schedule__day reveal">
+          <h3 class="schedule__day-name">Friday</h3>
+          <p class="schedule__day-date">April 10</p>
+          <ul class="schedule__day-items">
+            <li>Arrival &amp; Check-In</li>
+            <li>Opening Circle</li>
+            <li>Dinner</li>
+            <li>Evening Ceremony &mdash; Cacao, Storytelling, Ritual, Connection</li>
+          </ul>
+        </div>
+        <div class="schedule__day reveal reveal-delay-1">
+          <h3 class="schedule__day-name">Saturday</h3>
+          <p class="schedule__day-date">April 11</p>
+          <ul class="schedule__day-items">
+            <li>Morning Activation</li>
+            <li>Speaker: Burnout</li>
+            <li>Ritual Integration (Pool, Sauna, Land)</li>
+            <li>Speaker: Aligned Action &amp; Leadership</li>
+            <li>Embodiment &amp; Integration</li>
+            <li>Dinner</li>
+            <li>Corn Doll Crafting</li>
+            <li>Fire Ceremony</li>
+          </ul>
+        </div>
+        <div class="schedule__day reveal reveal-delay-2">
+          <h3 class="schedule__day-name">Sunday</h3>
+          <p class="schedule__day-date">April 12</p>
+          <ul class="schedule__day-items">
+            <li>Sunrise Ceremony</li>
+            <li>Light Breakfast</li>
+            <li>Closing Circle</li>
+            <li>Departure</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="schedule__note reveal">Full detailed schedule provided to registered participants.</p>
     </div>
   </section>
 
@@ -1154,8 +1561,8 @@
         <p class="section-label text-center">The Setting</p>
         <h2 class="section-heading text-center">Serana</h2>
         <p class="section-body text-center">
-          A stunning property in the Texas Hill Country offering luxury cabins,
-          expansive land, and a quiet, grounding environment for deep work.
+          The land at Serana offers a natural extension of this work&mdash;quiet, expansive,
+          and grounding&mdash;with access to the sauna, saltwater pool, and surrounding trails.
         </p>
       </div>
 
@@ -1170,7 +1577,7 @@
           <img class="property__img" src="images/img4.jpg" alt="Kitchen bar with handcrafted pendant lights" loading="lazy">
         </div>
         <div class="property__img-wrapper">
-          <img class="property__img" src="images/img3.jpg" alt="Outdoor yoga and meditation on the grounds" loading="lazy">
+          <img class="property__img" src="images/img3.jpg" alt="Outdoor space on the grounds" loading="lazy">
         </div>
       </div>
 
@@ -1205,20 +1612,14 @@
     </div>
   </section>
 
-  <!-- ===================== INCLUDES ===================== -->
-  <section class="includes" id="includes">
-    <div class="container--narrow text-center">
-      <p class="section-label reveal">What's Included</p>
-      <h2 class="section-heading reveal reveal-delay-1">Your Weekend</h2>
-      <p class="section-body reveal reveal-delay-2">
-        Every ticket includes the full retreat experience from Friday evening through Sunday.
+  <!-- ===================== WHY THIS WORKS ===================== -->
+  <section class="why">
+    <div class="container--narrow reveal">
+      <h2 class="why__heading">Designed for transformation, not distraction.</h2>
+      <p class="why__body">
+        Every element is intentional: from the fire ceremony, to the pool and sauna rituals,
+        to the storytelling and sacred work. We do not do busywork. We do presence, depth, and alignment.
       </p>
-      <ul class="includes__list">
-        <li class="includes__item reveal">Friday Opening Ceremony</li>
-        <li class="includes__item reveal reveal-delay-1">Full Saturday Programming</li>
-        <li class="includes__item reveal reveal-delay-2">Sunday Closing Ceremony</li>
-        <li class="includes__item reveal reveal-delay-3">Full access to sauna, pool, gym, land &amp; healing spaces</li>
-      </ul>
     </div>
   </section>
 
@@ -1246,18 +1647,18 @@
           </p>
           <div class="pricing-card__divider"></div>
           <div class="pricing-card__prices">
-            <div class="pricing-card__early">
-              <span class="pricing-card__early-badge">Early Bird</span>
+            <div class="pricing-card__early pricing-card__early--soldout">
+              <span class="pricing-card__early-badge pricing-card__early-badge--soldout">Sold Out</span>
               <div class="pricing-card__price">$595</div>
-              <div class="pricing-card__price-label">Limited spots</div>
+              <div class="pricing-card__price-label">Early bird</div>
             </div>
             <div class="pricing-card__standard">
               <div class="pricing-card__price">$675</div>
               <div class="pricing-card__price-label">Standard</div>
             </div>
           </div>
-          <!-- Replace # with Square Payment Link -->
-          <a href="#" class="pricing-card__cta" data-booking="base">Book Now</a>
+          <!-- Replace # with Square Payment Link for STANDARD BASE TICKET -->
+          <a href="#" class="pricing-card__cta" data-booking="base">Book Now &mdash; $675</a>
         </div>
 
         <!-- LUXURY CABIN -->
@@ -1278,17 +1679,18 @@
             <li>Central heat/AC</li>
           </ul>
           <div class="pricing-card__prices">
-            <div class="pricing-card__early">
-              <span class="pricing-card__early-badge">Early Bird</span>
+            <div class="pricing-card__early pricing-card__early--soldout">
+              <span class="pricing-card__early-badge pricing-card__early-badge--soldout">Sold Out</span>
               <div class="pricing-card__price">$1,070</div>
-              <div class="pricing-card__price-label">Base ticket + cabin</div>
+              <div class="pricing-card__price-label">Early bird</div>
             </div>
             <div class="pricing-card__standard">
               <div class="pricing-card__price">$1,250</div>
-              <div class="pricing-card__price-label">Standard</div>
+              <div class="pricing-card__price-label">Base ticket + cabin</div>
             </div>
           </div>
-          <a href="#" class="pricing-card__cta" data-booking="luxury">Book Now</a>
+          <!-- Replace # with Square Payment Links for STANDARD BASE + LUXURY CABIN -->
+          <a href="#" class="pricing-card__cta" data-booking="luxury">Book Now &mdash; $1,250</a>
         </div>
 
         <!-- FIELD CABIN -->
@@ -1309,17 +1711,18 @@
             <li>Central heat/AC</li>
           </ul>
           <div class="pricing-card__prices">
-            <div class="pricing-card__early">
-              <span class="pricing-card__early-badge">Early Bird</span>
+            <div class="pricing-card__early pricing-card__early--soldout">
+              <span class="pricing-card__early-badge pricing-card__early-badge--soldout">Sold Out</span>
               <div class="pricing-card__price">$920</div>
-              <div class="pricing-card__price-label">Base ticket + cabin</div>
+              <div class="pricing-card__price-label">Early bird</div>
             </div>
             <div class="pricing-card__standard">
               <div class="pricing-card__price">$1,100</div>
-              <div class="pricing-card__price-label">Standard</div>
+              <div class="pricing-card__price-label">Base ticket + cabin</div>
             </div>
           </div>
-          <a href="#" class="pricing-card__cta" data-booking="field">Book Now</a>
+          <!-- Replace # with Square Payment Links for STANDARD BASE + FIELD CABIN -->
+          <a href="#" class="pricing-card__cta" data-booking="field">Book Now &mdash; $1,100</a>
         </div>
       </div>
     </div>
@@ -1328,17 +1731,30 @@
   <!-- ===================== AVAILABILITY ===================== -->
   <section class="availability">
     <div class="container">
-      <p class="availability__text">Spaces are filling. Here's what remains:</p>
+      <p class="availability__text">Early bird is sold out. Limited spots remain at standard pricing:</p>
       <!-- UPDATE THESE MANUALLY AS SPOTS FILL -->
       <ul class="availability__spots">
-        <li>1 Early Bird Spot</li>
-        <li>&middot;</li>
-        <li>1 Field Cabin</li>
-        <li>&middot;</li>
         <li>A Few Luxury Cabins</li>
         <li>&middot;</li>
-        <li>Limited Commuter Passes</li>
+        <li>Limited Field Cabins</li>
+        <li>&middot;</li>
+        <li>Commuter Passes Available</li>
       </ul>
+    </div>
+  </section>
+
+  <!-- ===================== THE SACRED LEAP ===================== -->
+  <section class="leap" id="leap">
+    <div class="container--narrow">
+      <p class="section-label reveal">The Sacred Leap</p>
+      <h2 class="section-heading reveal reveal-delay-1">This is it.</h2>
+      <p class="leap__body reveal reveal-delay-2">
+        If you've been waiting for the &ldquo;right time&rdquo; to shift something&mdash;this is it.<br>
+        Step into the weekend with readiness.<br>
+        Release what is complete.<br>
+        Take action with clarity and aligned intention.
+      </p>
+      <a href="#pricing" class="leap__cta reveal reveal-delay-3">Reserve Your Sacred Place</a>
     </div>
   </section>
 
@@ -1351,6 +1767,15 @@
       <div class="faq__list">
         <div class="faq__item reveal">
           <button class="faq__question" aria-expanded="false">
+            Is this retreat right for me?
+            <span class="faq__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq__answer">
+            <p>If you've been feeling the need for space, clarity, or deeper support, this may be the right time to follow that. This retreat is designed for those ready to step into intentional work&mdash;not surface-level wellness. If you value ceremony, cultural reverence, and depth, and you're open to being seen and honest in community, you'll find what you're looking for here.</p>
+          </div>
+        </div>
+        <div class="faq__item reveal reveal-delay-1">
+          <button class="faq__question" aria-expanded="false">
             Can I bring a friend or partner?
             <span class="faq__icon" aria-hidden="true">+</span>
           </button>
@@ -1358,7 +1783,7 @@
             <p>Absolutely. Many participants are choosing to come with someone they trust. Having a friend or partner can offer an added layer of support going into the weekend.</p>
           </div>
         </div>
-        <div class="faq__item reveal reveal-delay-1">
+        <div class="faq__item reveal reveal-delay-2">
           <button class="faq__question" aria-expanded="false">
             What if I live nearby &mdash; do I need a cabin?
             <span class="faq__icon" aria-hidden="true">+</span>
@@ -1367,22 +1792,13 @@
             <p>Not at all. The Base Ticket (commuter option) gives you full access to the entire retreat experience. You simply travel to the property each day. On-site accommodations are optional for those who want the full immersive stay.</p>
           </div>
         </div>
-        <div class="faq__item reveal reveal-delay-2">
+        <div class="faq__item reveal reveal-delay-3">
           <button class="faq__question" aria-expanded="false">
             How do I reserve my spot?
             <span class="faq__icon" aria-hidden="true">+</span>
           </button>
           <div class="faq__answer">
-            <p>Click any "Book Now" button above to complete your registration and payment. If you have questions or want to discuss which option is right for you, reach out to <a href="mailto:hola@solsolacestudio.com" style="color: var(--teal);">hola@solsolacestudio.com</a> &mdash; we're happy to help.</p>
-          </div>
-        </div>
-        <div class="faq__item reveal reveal-delay-3">
-          <button class="faq__question" aria-expanded="false">
-            Is this retreat right for me?
-            <span class="faq__icon" aria-hidden="true">+</span>
-          </button>
-          <div class="faq__answer">
-            <p>If you've been feeling the need for space, clarity, or deeper support, this may be the right time to follow that. This weekend is designed for those who feel genuinely called to step into intentional healing work in a supported, spacious container.</p>
+            <p>Click any "Book Now" button above to complete your registration and payment. If you have questions or want to discuss which option is right for you, reach out to <a href="mailto:hola@solsolacestudio.com" style="color: var(--teal);">hola@solsolacestudio.com</a> &mdash; we're happy to connect with you personally.</p>
           </div>
         </div>
       </div>
@@ -1411,13 +1827,15 @@
         <a href="mailto:hola@solsolacestudio.com">hola@solsolacestudio.com</a>
       </div>
       <div class="footer__social">
-        <!-- Replace with actual Instagram URL -->
         <a href="https://instagram.com/solsolacestudio" target="_blank" rel="noopener">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
           Follow on Instagram
         </a>
       </div>
       <div class="footer__divider"></div>
+      <p class="footer__disclaimer">
+        This retreat is a ceremonial and experiential offering. It is not a medical, therapeutic, or clinical program. Participation is voluntary and self-directed.
+      </p>
       <p class="footer__copy">&copy; 2026 Sol Solace Studio. All rights reserved.</p>
     </div>
   </footer>
@@ -1479,7 +1897,6 @@
         btn.addEventListener('click', () => {
           const item = btn.parentElement;
           const isActive = item.classList.contains('active');
-          const expanded = btn.getAttribute('aria-expanded') === 'true';
 
           // Close all
           document.querySelectorAll('.faq__item').forEach((i) => {
@@ -1498,7 +1915,7 @@
 
     /* ========================
        EMAIL CAPTURE
-       Replace with actual form handler (Mailchimp, ConvertKit, Google Forms, etc.)
+       Replace with actual form handler (Formspree, Mailchimp, etc.)
     ======================== */
     (function() {
       const form = document.getElementById('captureForm');
@@ -1507,12 +1924,10 @@
       form.addEventListener('submit', (e) => {
         e.preventDefault();
         // TODO: Replace with actual form submission
-        // For now, just show success message
         form.style.display = 'none';
         success.style.display = 'block';
       });
     })();
-
 
     /* ========================
        SMOOTH SCROLL FOR ANCHOR LINKS

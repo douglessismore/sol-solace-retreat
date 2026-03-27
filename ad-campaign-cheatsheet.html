@@ -210,6 +210,41 @@
     line-height: 1.4;
   }
 
+  /* ── Ad Images inline ── */
+  .ad-images {
+    display: flex;
+    gap: 10px;
+    padding: 10px 14px 12px;
+    background: #f5f4f0;
+    border-top: 1px solid var(--light-border);
+    align-items: flex-end;
+  }
+  .ad-images .ad-img-wrap {
+    text-align: center;
+  }
+  .ad-images img {
+    border-radius: 4px;
+    border: 1px solid var(--light-border);
+    cursor: pointer;
+  }
+  .ad-images img:hover {
+    border-color: var(--gold);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+  }
+  .ad-images .img-label {
+    font-size: 9px;
+    color: var(--warm-gray);
+    margin-top: 3px;
+    font-weight: 500;
+  }
+  .ad-images .save-hint {
+    font-size: 9px;
+    color: var(--warm-gray);
+    font-style: italic;
+    align-self: center;
+    margin-left: auto;
+  }
+
   /* ── Budget ── */
   .budget-grid {
     display: grid;
@@ -409,7 +444,7 @@
         <div style="margin-top:8px;font-size:11px;color:var(--teal);font-weight:600;">Create 3 ads using the copy from:</div>
         <ul style="margin-top:2px;">
           <li><strong>&ldquo;The Pause&rdquo;</strong> &mdash; permission to stop</li>
-          <li><strong>&ldquo;Scarcity&rdquo;</strong> &mdash; early bird sold out, spots left</li>
+          <li><strong>&ldquo;Availability&rdquo;</strong> &mdash; early bird sold out, spots left</li>
           <li><strong>&ldquo;The Setting&rdquo;</strong> &mdash; Serana property details</li>
         </ul>
         <div style="margin-top:4px;font-size:11px;color:var(--warm-gray);">Full copy for each is in Section 2 below &darr;</div>
@@ -461,7 +496,8 @@
   <!-- ── 2. AD COPY ── -->
   <section>
     <h2><span class="num">2</span> Ad Copy &mdash; 5 Angles</h2>
-    <p style="font-size:12px;color:#666;margin-bottom:12px;"><span style="background:var(--gold);color:#fff;padding:1px 6px;border-radius:3px;font-size:10px;font-weight:600;">START</span> = launch with these &nbsp;&nbsp; <span style="background:var(--warm-gray);color:#fff;padding:1px 6px;border-radius:3px;font-size:10px;font-weight:600;">EXPAND</span> = add after Day 4</p>
+    <p style="font-size:12px;color:#666;margin-bottom:4px;"><span style="background:var(--gold);color:#fff;padding:1px 6px;border-radius:3px;font-size:10px;font-weight:600;">START</span> = launch with these &nbsp;&nbsp; <span style="background:var(--warm-gray);color:#fff;padding:1px 6px;border-radius:3px;font-size:10px;font-weight:600;">EXPAND</span> = add after Day 4</p>
+    <p style="font-size:11px;color:var(--warm-gray);margin-bottom:12px;">Each angle includes ready-to-upload images. Right-click &rarr; Save Image As &rarr; upload to Meta Ads Manager.</p>
     <div class="angle-cards">
 
       <!-- Angle 1 -->
@@ -480,6 +516,11 @@
             <div class="field"><span class="field-name">Headline:</span> <span class="field-value">The Sacred Leap, Spring Retreat</span></div>
             <div class="field"><span class="field-name">CTA:</span> <span class="field-value">Learn More</span></div>
           </div>
+        </div>
+        <div class="ad-images">
+          <div class="ad-img-wrap"><img src="ads/ad1-pause-story.png" style="height:120px;" alt="Story"><div class="img-label">Story 9:16</div></div>
+          <div class="ad-img-wrap"><img src="ads/ad2-pause-feed.png" style="height:80px;" alt="Feed"><div class="img-label">Feed 1:1</div></div>
+          <div class="save-hint">Right-click to save &darr;</div>
         </div>
       </div>
 
@@ -504,20 +545,25 @@
 
       <!-- Angle 3 -->
       <div class="angle-card">
-        <div class="angle-card-header"><span style="background:var(--gold);color:#fff;padding:1px 6px;border-radius:3px;font-size:10px;font-weight:600;margin-right:6px;">START</span> Angle 3: Scarcity + Social Proof <span style="font-weight:400;color:var(--warm-gray);">&mdash; Urgency</span></div>
+        <div class="angle-card-header"><span style="background:var(--gold);color:#fff;padding:1px 6px;border-radius:3px;font-size:10px;font-weight:600;margin-right:6px;">START</span> Angle 3: Availability <span style="font-weight:400;color:var(--warm-gray);">&mdash; What's open</span></div>
         <div class="angle-card-body">
           <div class="ad-variant">
             <div class="label">Story / Reel</div>
-            <div class="field"><span class="field-name">Primary:</span> <span class="field-value">Early bird sold out in the first week. A few standard spots remain. April 10&ndash;12.</span></div>
-            <div class="field"><span class="field-name">Headline:</span> <span class="field-value">Don't miss this one</span></div>
+            <div class="field"><span class="field-name">Primary:</span> <span class="field-value">A few spots are still open. 3 luxury cabins. 1 field cabin. Commuter passes. April 10&ndash;12.</span></div>
+            <div class="field"><span class="field-name">Headline:</span> <span class="field-value">See what's available</span></div>
             <div class="field"><span class="field-name">CTA:</span> <span class="field-value">Learn More</span></div>
           </div>
           <div class="ad-variant">
             <div class="label">Feed</div>
-            <div class="field"><span class="field-name">Primary:</span> <span class="field-value">Early bird pricing is gone.<br><br>What's left:<br>&rarr; 3 luxury cabins (private bath, king bed)<br>&rarr; 1 field cabin (queen bed, private bathhouse)<br>&rarr; Limited commuter passes<br><br>El Salto Sagrado &middot; April 10&ndash;12 &middot; Paige, TX</span></div>
-            <div class="field"><span class="field-name">Headline:</span> <span class="field-value">Reserve before it's full</span></div>
+            <div class="field"><span class="field-name">Primary:</span> <span class="field-value">A few spots are still open.<br><br>&rarr; 3 luxury cabins (private bath, king bed)<br>&rarr; 1 field cabin (queen bed, private bathhouse)<br>&rarr; Commuter passes available<br><br>El Salto Sagrado &middot; April 10&ndash;12 &middot; Paige, TX</span></div>
+            <div class="field"><span class="field-name">Headline:</span> <span class="field-value">See what's available</span></div>
             <div class="field"><span class="field-name">CTA:</span> <span class="field-value">Learn More</span></div>
           </div>
+        </div>
+        <div class="ad-images">
+          <div class="ad-img-wrap"><img src="ads/ad3-scarcity-story.png" style="height:120px;" alt="Story"><div class="img-label">Story 9:16</div></div>
+          <div class="ad-img-wrap"><img src="ads/ad4-scarcity-feed.png" style="height:80px;" alt="Feed"><div class="img-label">Feed 1:1</div></div>
+          <div class="save-hint">Right-click to save &darr;</div>
         </div>
       </div>
 
@@ -537,6 +583,11 @@
             <div class="field"><span class="field-name">Headline:</span> <span class="field-value">Explore the property</span></div>
             <div class="field"><span class="field-name">CTA:</span> <span class="field-value">Learn More</span></div>
           </div>
+        </div>
+        <div class="ad-images">
+          <div class="ad-img-wrap"><img src="ads/ad5-setting-story.png" style="height:120px;" alt="Story"><div class="img-label">Story 9:16</div></div>
+          <div class="ad-img-wrap"><img src="ads/ad6-setting-feed.png" style="height:80px;" alt="Feed"><div class="img-label">Feed 1:1</div></div>
+          <div class="save-hint">Right-click to save &darr;</div>
         </div>
       </div>
 
@@ -559,54 +610,6 @@
         </div>
       </div>
 
-    </div>
-  </section>
-
-  <!-- ── READY-TO-USE AD IMAGES ── -->
-  <section>
-    <h2><span class="num">&#9733;</span> Ready-to-Upload Ad Images</h2>
-    <p style="font-size:12px;color:#666;margin-bottom:14px;">Right-click any image and "Save Image As" to download. Story images are 1080&times;1920, Feed images are 1080&times;1080. Upload directly to Meta Ads Manager.</p>
-
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;">
-      <div style="text-align:center;">
-        <div style="font-size:11px;font-weight:600;color:var(--teal);margin-bottom:6px;"><span style="background:var(--gold);color:#fff;padding:1px 5px;border-radius:3px;font-size:9px;font-weight:600;">START</span> The Pause</div>
-        <div style="display:flex;gap:8px;justify-content:center;">
-          <div>
-            <img src="ads/ad1-pause-story.png" style="height:160px;border-radius:4px;border:1px solid var(--light-border);" alt="The Pause - Story">
-            <div style="font-size:9px;color:var(--warm-gray);margin-top:3px;">Story 9:16</div>
-          </div>
-          <div>
-            <img src="ads/ad2-pause-feed.png" style="height:90px;border-radius:4px;border:1px solid var(--light-border);" alt="The Pause - Feed">
-            <div style="font-size:9px;color:var(--warm-gray);margin-top:3px;">Feed 1:1</div>
-          </div>
-        </div>
-      </div>
-      <div style="text-align:center;">
-        <div style="font-size:11px;font-weight:600;color:var(--teal);margin-bottom:6px;"><span style="background:var(--gold);color:#fff;padding:1px 5px;border-radius:3px;font-size:9px;font-weight:600;">START</span> Scarcity</div>
-        <div style="display:flex;gap:8px;justify-content:center;">
-          <div>
-            <img src="ads/ad3-scarcity-story.png" style="height:160px;border-radius:4px;border:1px solid var(--light-border);" alt="Scarcity - Story">
-            <div style="font-size:9px;color:var(--warm-gray);margin-top:3px;">Story 9:16</div>
-          </div>
-          <div>
-            <img src="ads/ad4-scarcity-feed.png" style="height:90px;border-radius:4px;border:1px solid var(--light-border);" alt="Scarcity - Feed">
-            <div style="font-size:9px;color:var(--warm-gray);margin-top:3px;">Feed 1:1</div>
-          </div>
-        </div>
-      </div>
-      <div style="text-align:center;">
-        <div style="font-size:11px;font-weight:600;color:var(--teal);margin-bottom:6px;"><span style="background:var(--gold);color:#fff;padding:1px 5px;border-radius:3px;font-size:9px;font-weight:600;">START</span> The Setting</div>
-        <div style="display:flex;gap:8px;justify-content:center;">
-          <div>
-            <img src="ads/ad5-setting-story.png" style="height:160px;border-radius:4px;border:1px solid var(--light-border);" alt="The Setting - Story">
-            <div style="font-size:9px;color:var(--warm-gray);margin-top:3px;">Story 9:16</div>
-          </div>
-          <div>
-            <img src="ads/ad6-setting-feed.png" style="height:90px;border-radius:4px;border:1px solid var(--light-border);" alt="The Setting - Feed">
-            <div style="font-size:9px;color:var(--warm-gray);margin-top:3px;">Feed 1:1</div>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 

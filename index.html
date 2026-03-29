@@ -959,11 +959,24 @@
     }
 
     .pricing-card__early--soldout {
-      opacity: 0.45;
+      opacity: 0.35;
+      transform: scale(0.75);
+      transform-origin: center;
+      margin-bottom: -8px;
     }
 
     .pricing-card__early--soldout .pricing-card__price {
       text-decoration: line-through;
+      font-size: 1.4rem;
+    }
+
+    .pricing-card__early--soldout .pricing-card__early-badge {
+      font-size: 0.55rem;
+      padding: 2px 8px;
+    }
+
+    .pricing-card__early--soldout .pricing-card__price-label {
+      font-size: 0.65rem;
     }
 
     .pricing-card__price {

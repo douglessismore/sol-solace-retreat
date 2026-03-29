@@ -947,6 +947,29 @@
       50% { opacity: 0.7; }
     }
 
+    .pricing-card--soldout {
+      position: relative;
+      opacity: 0.45 !important;
+      pointer-events: none;
+      filter: grayscale(40%);
+    }
+
+    .pricing-card__soldout-banner {
+      position: absolute;
+      top: 20px;
+      right: -30px;
+      background: var(--text-muted);
+      color: white;
+      font-family: var(--font-sans);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 6px 40px;
+      transform: rotate(15deg);
+      z-index: 2;
+    }
+
     .pricing-card__cta--soldout {
       background: var(--text-muted);
       pointer-events: none;
@@ -1746,7 +1769,8 @@
         </div>
 
         <!-- FIELD CABIN -->
-        <div class="pricing-card reveal reveal-delay-2">
+        <div class="pricing-card pricing-card--soldout reveal reveal-delay-2">
+          <div class="pricing-card__soldout-banner">Sold Out</div>
           <p class="pricing-card__type">Stay On-Site</p>
           <h3 class="pricing-card__title">Field Cabin</h3>
           <p class="pricing-card__desc">

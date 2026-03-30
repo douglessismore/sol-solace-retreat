@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=1080">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  width: 1080px;
+  height: 1440px;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Cormorant Garamond', serif;
+}
+.bg {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: url('../../images/img1.jpg') center center / cover no-repeat;
+}
+.overlay {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(25, 40, 38, 0.3) 0%,
+    rgba(25, 40, 38, 0.55) 30%,
+    rgba(25, 40, 38, 0.7) 60%,
+    rgba(25, 40, 38, 0.85) 100%
+  );
+}
+.content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 80px;
+  text-align: center;
+}
+.studio-name {
+  position: absolute;
+  top: 60px;
+  left: 80px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 5px;
+  color: rgba(255,255,255,0.7);
+  text-transform: uppercase;
+}
+.countdown {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: 4px;
+  color: #C4A862;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.headline {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 90px;
+  line-height: 1.05;
+  color: #FAF8F3;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+.sub-headline {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 1.1;
+  color: #C4A862;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+}
+.divider {
+  width: 100px;
+  height: 2px;
+  background: #C4A862;
+  margin-bottom: 50px;
+}
+.how-to {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: 4px;
+  color: #C4A862;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.steps {
+  list-style: none;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 36px;
+  color: #FAF8F3;
+  line-height: 2;
+}
+.steps li {
+  opacity: 0.9;
+}
+.steps li::before {
+  content: '  ';
+}
+.bottom-note {
+  position: absolute;
+  bottom: 60px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  color: rgba(255,255,255,0.6);
+  letter-spacing: 2px;
+}
+</style>
+</head>
+<body>
+<div class="bg"></div>
+<div class="overlay"></div>
+<div class="content">
+  <div class="studio-name">Sol Solace Studio</div>
+  <div class="countdown">2 Week Countdown</div>
+  <div class="headline">Commuter Pass</div>
+  <div class="sub-headline">Giveaway</div>
+  <div class="divider"></div>
+  <div class="how-to">How to Enter</div>
+  <ul class="steps">
+    <li>Like this post</li>
+    <li>Follow @solsolacestudio</li>
+    <li>Tag 3 friends in the comments</li>
+    <li>Share to your story for an extra entry</li>
+  </ul>
+  <div class="bottom-note">El Salto Sagrado  ·  April 10-12  ·  Serana, Paige TX</div>
+</div>
+</body>
+</html>

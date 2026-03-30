@@ -1,6 +1,6 @@
 # El Salto Sagrado — Session Handoff
 
-**Date:** March 28, 2026
+**Date:** March 29, 2026 (updated)
 **Project:** Sol Solace Studio retreat landing page + ad campaign
 **Repo:** github.com/douglessismore/sol-solace-retreat
 **Live site:** retreat.solsolacestudio.com
@@ -18,7 +18,7 @@
 - Early bird sold-out pricing visually shrunk (75% scale, low opacity) so active prices dominate
 - Availability banner updated: "Field cabins are sold out. Only a few spots remain: 3 Luxury Cabins · Commuter Passes Available"
 
-### Meta Ads Campaign — LIVE (Processing)
+### Meta Ads Campaign — LIVE & ACTIVE
 - Campaign: "El Salto Sagrado - Spring Retreat"
 - 1 ad set: "Warm - IG Engagers + Website Visitors"
 - Budget: $30/day, Mar 27 – Apr 9, 2026
@@ -27,6 +27,14 @@
 - Tracking: Doug Stienstra's Pixel (629633540407763) — matches landing page
 - Placements: Advantage+ (Meta decides, will lean IG based on creative format)
 - Account spending limit: $250 (will cap around day 8 at $30/day — may need increase)
+
+### Day 1-2 Performance (as of Mar 28-29)
+- **129 landing page views** at $0.31/view ($39.70 spent)
+- **The Setting:** 42 views, $0.22/view — BEST PERFORMER
+- **The Pause:** 76 views, $0.34/view — getting most budget from Meta
+- **Availability:** 11 views, $0.38/view — WEAKEST, consider pausing
+- No purchases yet — expected for $675-$1,250 price point from cold audience
+- Recommendation: pause Availability ad, let budget concentrate on winners
 
 ### Ad Creative Assets — READY
 - 6 ad images in `/ads/` (1080px exact Meta specs, no CTA buttons baked in)

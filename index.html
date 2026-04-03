@@ -806,7 +806,7 @@
 
     .pricing__cards {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       gap: var(--space-md);
       max-width: 1100px;
       margin: 0 auto;
@@ -1367,12 +1367,14 @@
     /* ========================
        RESPONSIVE
     ======================== */
-    @media (max-width: 900px) {
+    @media (max-width: 1100px) {
       .pricing__cards {
-        grid-template-columns: 1fr;
-        max-width: 450px;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 700px;
       }
+    }
 
+    @media (max-width: 900px) {
       .property__grid {
         grid-template-columns: 1fr 1fr;
       }
@@ -1390,6 +1392,13 @@
       .who__grid {
         grid-template-columns: 1fr;
         gap: var(--space-md);
+      }
+    }
+
+    @media (max-width: 700px) {
+      .pricing__cards {
+        grid-template-columns: 1fr;
+        max-width: 450px;
       }
     }
 
@@ -1705,15 +1714,40 @@
         <p class="section-label text-center">Pricing &amp; Accommodations</p>
         <h2 class="section-heading text-center">Choose Your Experience</h2>
         <p class="section-body text-center">
-          Attend as a commuter or stay on-site in one of Serana's beautiful accommodations.
-          On-site guests book a base ticket plus their cabin of choice.
+          Join for a single Saturday immersion, attend as a commuter for the full weekend,
+          or stay on-site in one of Serana's beautiful accommodations.
         </p>
         <p class="pricing__note text-center">Overnight accommodations are limited.</p>
       </div>
 
       <div class="pricing__cards">
-        <!-- COMMUTER / BASE TICKET -->
+        <!-- SATURDAY IMMERSION PASS -->
         <div class="pricing-card reveal">
+          <p class="pricing-card__type">Saturday Only</p>
+          <h3 class="pricing-card__title">Immersion Pass</h3>
+          <p class="pricing-card__desc">
+            A full day of programming from sunrise to after dark,
+            held within the heart of the retreat.
+          </p>
+          <div class="pricing-card__divider"></div>
+          <ul class="pricing-card__amenities">
+            <li>Movement, guided sessions &amp; guest speakers</li>
+            <li>1:1 bodywork &amp; intuitive readings available</li>
+            <li>Nature, sauna &amp; saltwater pool access</li>
+            <li>Light meals + fully catered dinner</li>
+            <li>Evening fire ceremony &amp; reflection</li>
+          </ul>
+          <div class="pricing-card__prices">
+            <div class="pricing-card__standard">
+              <div class="pricing-card__price">$425</div>
+              <div class="pricing-card__price-label">Saturday</div>
+            </div>
+          </div>
+          <a href="https://square.link/u/teVDPNA7" class="pricing-card__cta" data-booking="immersion" target="_blank" rel="noopener">Book Now &mdash; $425</a>
+        </div>
+
+        <!-- COMMUTER / BASE TICKET -->
+        <div class="pricing-card reveal reveal-delay-1">
           <p class="pricing-card__type">Commuter</p>
           <h3 class="pricing-card__title">Base Ticket</h3>
           <p class="pricing-card__desc">
@@ -1732,40 +1766,7 @@
               <div class="pricing-card__price-label">Standard</div>
             </div>
           </div>
-          <a href="https://square.link/u/xwM3x16G" class="pricing-card__cta" data-booking="base" target="_blank" rel="noopener">Book Now &mdash; $675</a>
-        </div>
-
-        <!-- LUXURY CABIN -->
-        <div class="pricing-card pricing-card--featured reveal reveal-delay-1">
-          <p class="pricing-card__type">Stay On-Site</p>
-          <h3 class="pricing-card__title">Luxury Cabin</h3>
-          <p class="pricing-card__desc">
-            Brand new Post Oak Cabins with private en-suite bathroom,
-            king bed, and french doors overlooking the property.
-          </p>
-          <div class="pricing-card__divider"></div>
-          <ul class="pricing-card__amenities">
-            <li>Private, spa-like en-suite bathroom</li>
-            <li>Organic cotton king-sized mattress</li>
-            <li>Brooklinen bath towels</li>
-            <li>352 sq ft indoor + 160 sq ft outdoor</li>
-            <li>Mini fridge + organic coffee station</li>
-            <li>Central heat/AC</li>
-          </ul>
-          <div class="pricing-card__prices">
-            <div class="pricing-card__early pricing-card__early--soldout">
-              <span class="pricing-card__early-badge pricing-card__early-badge--soldout">Sold Out</span>
-              <div class="pricing-card__price">$1,070</div>
-              <div class="pricing-card__price-label">Early bird</div>
-            </div>
-            <div class="pricing-card__standard">
-              <div class="pricing-card__price">$1,250</div>
-              <div class="pricing-card__price-label">Base ticket + cabin</div>
-            </div>
-          </div>
-          <span class="pricing-card__urgency">Only 2 left</span>
-          <p class="pricing-card__tax-note">Plus 13% lodging tax</p>
-          <a href="https://square.link/u/cidSxf0W" class="pricing-card__cta" data-booking="luxury" target="_blank" rel="noopener">Book Now &mdash; $1,250</a>
+          <a href="https://square.link/u/gvBnRg5a" class="pricing-card__cta" data-booking="base" target="_blank" rel="noopener">Book Now &mdash; $675</a>
         </div>
 
         <!-- FIELD CABIN -->
@@ -1800,6 +1801,39 @@
           <p class="pricing-card__tax-note">Plus 13% lodging tax</p>
           <a class="pricing-card__cta pricing-card__cta--soldout">Sold Out</a>
         </div>
+
+        <!-- LUXURY CABIN -->
+        <div class="pricing-card pricing-card--featured reveal reveal-delay-3">
+          <p class="pricing-card__type">Stay On-Site</p>
+          <h3 class="pricing-card__title">Luxury Cabin</h3>
+          <p class="pricing-card__desc">
+            Brand new Post Oak Cabins with private en-suite bathroom,
+            king bed, and french doors overlooking the property.
+          </p>
+          <div class="pricing-card__divider"></div>
+          <ul class="pricing-card__amenities">
+            <li>Private, spa-like en-suite bathroom</li>
+            <li>Organic cotton king-sized mattress</li>
+            <li>Brooklinen bath towels</li>
+            <li>352 sq ft indoor + 160 sq ft outdoor</li>
+            <li>Mini fridge + organic coffee station</li>
+            <li>Central heat/AC</li>
+          </ul>
+          <div class="pricing-card__prices">
+            <div class="pricing-card__early pricing-card__early--soldout">
+              <span class="pricing-card__early-badge pricing-card__early-badge--soldout">Sold Out</span>
+              <div class="pricing-card__price">$1,070</div>
+              <div class="pricing-card__price-label">Early bird</div>
+            </div>
+            <div class="pricing-card__standard">
+              <div class="pricing-card__price">$1,250</div>
+              <div class="pricing-card__price-label">Base ticket + cabin</div>
+            </div>
+          </div>
+          <span class="pricing-card__urgency">Only 2 left</span>
+          <p class="pricing-card__tax-note">Plus 13% lodging tax</p>
+          <a href="https://square.link/u/cidSxf0W" class="pricing-card__cta" data-booking="luxury" target="_blank" rel="noopener">Book Now &mdash; $1,250</a>
+        </div>
       </div>
     </div>
   </section>
@@ -1813,6 +1847,8 @@
         <li>2 Luxury Cabins</li>
         <li>&middot;</li>
         <li>Commuter Passes Available</li>
+        <li>&middot;</li>
+        <li>Saturday Immersion Passes Available</li>
       </ul>
     </div>
   </section>
